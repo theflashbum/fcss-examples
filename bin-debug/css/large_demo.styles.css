@@ -1,0 +1,4649 @@
+/* CSS file */
+
+baseText
+{
+	font-face: Helvetica Neue;
+	embedFonts: true;
+	anti-alias-type: advanced;
+	sharpness: 50;
+	thickness: 100;
+	letterSpacing: -1;
+}
+
+baseText .TextArea{
+	color: #ffffff;
+	letterSpacing: 0;
+}
+
+baseText .TextInput{
+	background-color: #ffffff;
+	color: #666666;
+	letterSpacing: 0;
+}
+
+baseText .ScrollingTextArea{
+	color: #ffffff;
+	letterSpacing: 0;
+}
+
+TextAreaTopArrow{
+	width: 14px;
+	height: 10px;
+	background-image: url("/pub/e/img/TextArrowUp_Up.png");
+}
+
+TextAreaBottomArrow{
+	width: 14px;
+	height: 10px;
+	background-image: url("/pub/e/img/TextArrowDown_Up.png");
+}
+
+verticalLayout
+{
+	direction: below;
+	gap: 10px;
+}
+
+horizontalLayout
+{
+	direction: right;
+	gap: 10px;
+}
+
+/* Custom XML Components */
+baseText .XMLDropDownButton
+{
+	
+}
+
+.TextInput .XMLTextInput
+{
+	
+}
+
+/***********************************************************/
+/***********************************************************/
+/***********************************************************/
+/***********************************************************/
+/***********************************************************/
+/* Supported fonts: HelveticaNeueBoldCondensed */
+#mainSection{
+	x: 0px;
+	y: 40px;
+	width: 960px;
+	height: 540px;	
+	backgroundColor: #000000;
+	overflow: hidden;
+}
+
+.Label{
+	font-face: Helvetica Neue;
+	color: #ffffff;
+	size: 18;
+	letter-spacing: -1px;
+	embedFonts: true;
+}
+
+.Label .LabelButton{
+	buttonMode: true;
+	font-face: Helvetica Neue;
+	embedFonts: true;
+}
+
+.Header{
+	width: 960px;
+	height: 40px;
+	background-color: #ffffff;
+}
+
+#mainMenu{
+	x: 208px;
+}
+
+#label@menuButton{
+	font-face: Helvetica Neue;
+	font-size: 28px;
+	letter-spacing: -2px;
+	embedFonts: true;
+	height: 40px;
+	color: #666666;
+	padding-left: 16px;
+	padding-right: 16px;
+	background-color: #ffffff;
+}
+
+#label@menuButton:over{
+	color: #ffffff;
+	background-color: #000000;
+}
+
+#label@menuButton:selected{
+	color: #ffffff;
+	background-color: #000000;
+}
+
+#popArea@menuButton{
+	y: 40px;
+}
+
+#description@menuButton{
+	color: #ffffff;
+	background-color: #000000;
+	auto-size: left;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	padding-left: 18px;
+	padding-right: 18px;
+	textFieldWidth: 300px;
+	height: 40px;
+	font-size: 20px;
+	letter-spacing: -1;
+}
+
+#popArea@boostCount{
+	
+}
+
+#description@boostCounter{
+	x: -114px;
+	y: 8px;
+	color: #ffffff;
+	background-color: #000000;
+	auto-size: left;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	padding-left: 18px;
+	padding-right: 18px;
+	textFieldWidth: 180px;
+	height: 40px;
+	font-size: 20px;
+}
+
+#logo{
+	x: 20px;
+	y: 4px;
+	width: 180px;
+	height: 33px;
+	background-image: url( '/pub/e/img/logo.png' );
+}
+
+#boostCounter{
+	height: 40px;
+	padding-left: 8px;
+	padding-right: 8px;
+	gap: -6px;
+}
+
+.LabelButton #boostCount{
+	font-size: 15px;
+	color: #000000;
+}
+
+.LabelButton #boostSend{
+	font-size: 15px;
+	color: #0099FF;
+}	
+
+#boostSend:up0{
+	color: #0099FF;
+}	
+
+#boostSend:up1{
+	color: #0099CC;
+}	
+
+#boostSend:up2{
+	color: #00AA80;
+}	
+
+#boostSend:up3{
+	color: #00BB40;
+}	
+
+#boostSend:up4{
+	color: #00DD00;
+}	
+
+
+#boostCounter:over{
+	background-color: #000000;
+}	
+
+#boostCount:over{
+	color: #ffffff;
+}		
+
+#boostSend:over{
+	color: #ffffff;
+}	
+
+#footer{
+	y: 580px;
+	background-color: #000000;
+	padding-left: 20px;
+}	
+
+#reasons{
+	letter-spacing: -1px;
+	font-size: 20px;
+	color: #ffffff;	
+}
+
+#languageToggle{
+	y: 40px;
+	font-size: 12px;
+	color: #000000;
+	background-color: #0099FF;
+	height: 20px;
+	width: 180px;
+	letter-spacing: 0px;
+	padding-left: 10px;
+}
+
+#armySponsor{
+	x: 910px;
+	y: 10px;
+	alpha: .5;
+}
+
+#adSponsor{
+	x: 870px;
+	y: 10px;
+	alpha: .5;
+}
+
+#footerNav{
+	x: 202px;
+	y: 38px;
+	gap: 16px;
+}
+
+FooterButtons{
+	color: #666666;
+	font-size: 12px;
+	background-color-alpha: 0;
+	background-color: #666666;
+	padding-left: 8px;
+	padding-right: 8px;
+	letter-spacing: 0px;
+	height: 25px;
+}
+
+FooterPop{
+	y: 310;
+	width: 495px;
+	height: 310px;
+	background-color: #666666;
+}
+
+FooterDescriptions{
+	font-size: 11px;
+	color: #ffffff;
+	padding-top: 18px;
+	padding-left: 18px;
+	textFieldWidth: 435px;
+	textFieldHeight: 270px;
+}
+
+FooterPop #popArea@privacy{}
+FooterPop #popArea@terms{}
+
+FooterButtons #label@privacy{}
+FooterButtons #label@terms{}
+
+FooterDescriptions #description@privacy{}
+FooterDescriptions #description@terms{}
+
+FooterButtons #contact{}
+
+#ticker{
+	x: 210px;
+	y: 5px;
+	width: 610px;
+	height: 25px;
+	overflow:hidden;
+}
+
+TickerText{
+	color: #A8A8A8;
+	font-size: 15px;
+	textFieldWidth: 610px;
+	textFieldHeight: 25px;
+	letter-spacing: 0px;
+}
+
+#label@privacy:over{
+	background-color-alpha: 1;
+	color: #000000;
+}
+
+#label@terms:over{
+	background-color-alpha: 1;		
+	color: #000000;
+}
+
+#contact:over{
+	background-color-alpha: 1;
+	color: #000000;
+}
+
+#homeSection{
+	width: 960px;
+	height: 540px;
+}
+
+#homeSlide{
+	width: 960px;
+	height: 540px;
+}
+
+#homePagination{
+	x: 930px;
+	y: 460px;
+}
+
+#count@homePagination{
+	color: #ffffff;
+	font-size: 17px;
+	padding-right: 10px;
+	letter-spacing: 0px;
+}
+
+HomeArrow{
+	y: 6px;
+	width: 17px;
+	height: 14px;
+}
+
+HomeArrow #leftArrow@homePagination{
+	background-image: url( '/pub/e/img/HomePageArrowLeft_Up.png' );
+}
+
+HomeArrow #rightArrow@homePagination{
+	background-image: url( '/pub/e/img/HomePageArrowRight_Up.png' );
+}
+
+#leftArrow@homePagination:over{
+	background-image: url( '/pub/e/img/HomePageArrowLeft_Over.png' );
+}
+
+#rightArrow@homePagination:over{
+	background-image: url( '/pub/e/img/HomePageArrowRight_Over.png' );
+}
+
+#leftArrow@homePagination:disabled{
+	background-image: url( '/pub/e/img/HomePageArrowLeft_Disabled.png' );
+}
+
+#rightArrow@homePagination:disabled{
+	background-image: url( '/pub/e/img/HomePageArrowRight_Disabled.png' );
+}
+
+#leftPanel{
+	width: 320px;
+	height: 540px;
+	padding-left: 18px;
+	background-color: #0099FF;
+}
+
+#centerPanel{
+	width: 320px;
+	height: 540px;
+	overflow: hidden;
+}
+
+#rightPanel{
+	width: 320px;
+	height: 540px;
+	overflow: hidden;
+}
+
+#title@leftPanel{
+	color: #ffffff;
+	font-size: 61px;
+	letter-spacing: -4;
+}
+
+TitleMenuPanel{
+	x: 18px;
+	y: -4px;
+	color: #ffffff;
+	font-size: 61px;	
+	multiline: true;
+	word-wrap: true;		
+	textFieldWidth: 280px;
+	leading: -20px;
+	letter-spacing: -4;
+}
+
+TitleMenuPanel #title@centerPanel{}
+
+TitleMenuPanel #title@rightPanel{}
+
+#description@leftPanel{
+	y: 64px;
+	auto-size: left;
+	textFieldWidth: 300px;
+	color: #ffffff;
+	leading: -4px;
+	letter-spacing: -1px;
+	font-size: 28px;	
+}
+
+#link@leftPanel{
+	y: 400px;
+	color: #ffffff;
+	leading: -4px;
+	letter-spacing: -1px;
+	font-size: 16px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: -1;
+	padding-bottom: 1;
+	background-color: #ffffff;
+	background-color-alpha: 0;
+}
+
+#link@leftPanel:over{
+	color: #0099FF;
+	background-color-alpha: 1;
+}
+
+#back@studentInfoSection{
+	x: 800px;
+	background-color: #000000;
+	background-color-alpha: 0;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: -1;
+	padding-bottom: 1;
+}
+
+#back@studentInfoSection:over{
+	background-color-alpha: 1;
+}
+
+#back@studentInfoSection:normal{
+	y: 0px;
+}
+
+#back@studentInfoSection:adjusted{
+	y: -25px;
+}
+
+
+
+#menu@centerPanel{
+	y: 120px;
+}
+
+#menu@rightPanel{
+	y: 120px;
+}
+
+#menuButton@centerPanel{
+	color: #ffffff;
+	font-size: 25px;
+	width: 300px;
+	height: 35px;	
+	padding-left: 20px;
+	clear-box-model: background;
+	overflow: hidden;
+}
+
+#menuButton@centerPanel:over{
+	background-color: #0099FF;
+}
+
+#menuButton@rightPanel{
+	color: #ffffff;
+	font-size: 25px;
+	width: 300px;
+	height: 35px;	
+	padding-left: 20px;
+	clear-box-model: background;
+	overflow: hidden;
+}
+
+#menuButton@rightPanel:over{
+	background-color: #0099FF;
+}
+
+#skip@introSection{
+	y: 500px;
+	color: #999999;
+	font-size: 20px;
+}
+
+#skip@introSection:over{
+	color: #ffffff;
+}
+
+#tempHomeTextArea{
+	x: 20px;
+	y: 20px;
+	textFieldWidth: 920px;
+	textFieldHeight: 500px;
+	color: #ffffff;
+	font-size: 56px;
+	leading: -12px;
+	letterSpacing: -3;
+}
+
+#homeInfoBar{
+	y: 450px;
+	height: 90px;
+	width: 960px;
+	padding-top: 8px;
+	padding-left: 18px;
+	padding-right: 18px;
+	background-color: #000000;
+	background-color-alpha: .8;	
+	gap: 30px;
+}
+
+HomeInfoBarTitle{
+	font-size: 17px;
+	color: #ffffff;
+	button-mode: true;
+	background-color-alpha: 0;
+	background-color: #ffffff;
+	background-color-alpha: 0;
+}
+
+HomeInfoBarDescription{
+	font-size: 12px;
+	color: #ffffff;
+	textFieldWidth: 200px;
+	textFieldHeight: 60px;
+	letter-spacing: -.5px;
+}
+
+HomeInfoItem{
+	background-color: #ffffff;
+	background-color-alpha: 0;
+}
+
+HomeInfoBarTitle #title@homeInfoItem0{
+	color: #0099FF;
+}
+
+HomeInfoBarTitle #title@homeInfoItem1{
+	color: #0099CC;
+}
+
+HomeInfoBarTitle #title@homeInfoItem2{
+	color: #00AA80;
+}
+
+HomeInfoBarTitle #title@homeInfoItem3{
+	color: #00DD00;
+}
+
+#title@homeInfoItem0:over{
+	background-color-alpha: 1;
+}
+
+#title@homeInfoItem1:over{
+	background-color-alpha: 1;
+}
+
+#title@homeInfoItem2:over{
+	background-color-alpha: 1;
+}
+
+#title@homeInfoItem3:over{
+	background-color-alpha: 1;
+}
+
+HomeInfoBarDescription #description@homeInfoItem0{}
+
+HomeInfoBarDescription #description@homeInfoItem1{}
+
+HomeInfoBarDescription #description@homeInfoItem2{}
+
+HomeInfoBarDescription #description@homeInfoItem3{}
+
+
+
+
+
+.XMLLayout
+{
+	direction: below;
+	gap: 10px;
+}
+
+
+/* More Styles */
+
+
+
+#typeMenu
+{
+	y: 200px;
+}
+
+#mediaMenu
+{
+	x: 230px;
+	y: 200px;
+}
+
+CampaignButtons{
+	width: 190px;
+	padding-left: 2px;
+	font-size: 18px;
+	color: #ffffff;
+	clear-box-model: background;
+}
+
+CampaignButtons:over{
+	color: #00AA80;
+	background-color: #ffffff;
+}
+
+CampaignImageDisplay{
+	x: 580px;
+	y: 70px;
+}
+
+#campaignVideoDisplay{
+	x: 320px;
+	y: 120px;
+	width: 607px;
+	height: 365px;
+	padding-top: 35px;
+	background-color: #000000;	
+	overflow: hidden;
+}
+
+#player@campaignVideoDisplay{
+	x: 20px;
+	width: 567px;
+	height: 297px;	
+}
+
+#controls@campaignVideoDisplay{
+	x: 0px;
+	y: 310px;
+	width: 598;
+	height: 25;
+}
+
+/* Form Step Styles */
+
+baseSetp{
+	width: 200px;
+	height: 200px;
+}
+
+#studentInfoSection{
+	width: 960px;
+	height: 540px;
+	overflow: hidden;
+}
+
+.StudentDrawer{
+	y: 415px;
+	height: 145px;
+	width: 960px;
+	openY: 415px;
+	closeY: 515px;
+}
+
+#bg@studentDrawer{
+	y: 25px;
+	height: 100px;
+	width: 960px;
+	background-color: #000000;
+}
+
+#nameLabel@studentInfoSection{
+	x: 18px;
+	y: 230px;
+	color: #ffffff;
+	font-size: 88px;
+	letter-spacing: -6;
+}
+
+#locationLabel@studentInfoSection{
+	x: 18px;
+	y: 310px;
+	color: #ffffff;
+	font-size: 88px;
+	letter-spacing: -6;
+}
+
+StudentDrawerTab{
+	height: 27px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: -2px;
+	color: #ffffff;
+	font-size: 21px;
+	background-color: #000000;
+	background-color-alpha: 0;
+}
+
+StudentDrawerTab:over{
+	background-color-alpha: 1;
+}
+
+#videos@studentDrawer{
+	padding-right: 30px;
+	background-image: url('/pub/e/img/dropdownarrow_ffffff.png');
+	background-repeat: no-repeat;
+	background-position:  76 8;
+}
+
+#videos@studentDrawer:over{
+	padding-right: 30px;
+}
+
+#videos@studentDrawer:closed{
+	background-image: url('/pub/e/img/dropuparrow_ffffff.png');
+}
+
+#videos@studentDrawer:opened{
+	background-image: url('/pub/e/img/dropdownarrow_ffffff.png');
+}
+
+#menu@studentDrawer{
+	x: 10px;
+}
+
+ProfileColumn{
+	x: 20px;
+	y: 45px;
+	textFieldWidth: 298px;
+	textFieldHeight: 70px;
+	color: #ffffff;
+}
+
+#columnLayout@profilePanel{
+	gap: 10px;
+}
+
+#layout@videoPanel{
+	gap: 20px;
+}
+
+#videoNavContainer{
+	x: 30px;
+	y: 45px;
+	width: 900px;
+	height: 60px;
+	overflow: hidden;
+}
+
+#videoNavLeftArrow{
+	x: 10px;
+	y: 65px;
+	width: 10px;
+	height: 14px;
+	background-image: url("/pub/e/img/VideoNavArrowLeft_Up.png");
+}
+
+#videoNavRightArrow{
+	x: 940px;
+	y: 65px;
+	width: 10px;
+	height: 14px;
+	background-image: url("/pub/e/img/VideoNavArrowRight_Up.png");
+}
+
+#videoNavLeftArrow:over{
+	background-image: url("/pub/e/img/VideoNavArrowLeft_Over.png");
+}
+
+#videoNavRightArrow:over{
+	background-image: url("/pub/e/img/VideoNavArrowRight_Over.png");
+}
+
+
+/* Intro Text Animation */
+
+TypedCaret{
+	width: 40px;
+	height: 100px;
+	background-color: #ffffff;
+}
+
+TypedTextArea{
+	letterSpacing: -3;
+	leading: -4;
+	font-size: 56px;
+	textFieldWidth: 960px;
+	textFieldHeight: 500px;
+}
+
+#textArea@typedText0{
+	color: #0099FF;
+}
+
+#caret@typedText0{
+	background-color: #0099FF;
+}
+
+#textArea@typedText1{
+	color: #0099CC;
+}
+
+#caret@typedText1{
+	background-color: #0099CC;
+}
+
+#textArea@typedText2{
+	color: #00AA80;
+}
+
+#caret@typedText2{
+	background-color: #00AA80;
+}
+
+#textArea@typedText3{
+	color: #fffc00;
+}
+
+#caret@typedText3{
+	background-color: #fffc00;
+}
+
+#textArea@typedText4{
+	color: #00BB40;
+}
+
+#caret@typedText4{
+	background-color: #00BB40;
+}
+
+#textArea@typedText5{
+	color: #00DD00;
+}
+
+#caret@typedText5{
+	background-color: #00DD00;
+}
+
+/***********************************************************/
+/***********************************************************/
+/***********************************************************/
+/***********************************************************/
+/***********************************************************/
+
+/* CSS file */
+
+/* Form elements Styles */
+
+/* More Styles */
+
+#typeMenu
+{
+	y: 200px;
+}
+
+/*
+****************************************************************************************************************************************
+SEND BOOST DISPLAY
+****************************************************************************************************************************************
+*/
+
+
+
+/*
+****************************************************************************************************************************************
+FORMS
+****************************************************************************************************************************************
+*/
+
+#boostStudentForm{
+	x: 20px;
+	y: 40px;
+	width: 920px;
+	height: 60px;
+	background-color-alpha: 1;
+}
+
+#emailStudentForm{
+	y: -10;
+	width: 920px;
+	height: 60px;
+}
+
+/*
+****************************************************************************************************************************************
+BUTTONS
+****************************************************************************************************************************************
+*/
+
+#speakerButton
+{
+	x: 512;
+	y: 7;
+	width: 10;
+	height: 10;
+	background-image: url('/pub/e/img/speaker.png');
+}
+
+baseText CheckBoxLabel{
+	color: #ffffff;
+	padding-left: 20px;
+	background-repeat: no-repeat;
+	background-position:  0 3;
+	word-wrap: true;
+	multiline: true;
+	line-spacing: 0px;
+	textFieldWidth: 300px;
+}
+
+CheckBoxLabel:checked{
+	background-image: url('/pub/e/img/checkbox_checked.png');
+}
+
+CheckBoxLabel:unchecked{
+	background-image: url('/pub/e/img/checkbox_unchecked.png');
+}
+
+CheckBoxLabel:error{
+	color: #ffff00;
+}
+
+FormButton{
+	font-size: 16px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 2px;
+	padding-bottom: -2px;
+	color: #ffffff;
+	background-color: #ffffff;
+	background-color-alpha: 0;
+	auto-size: none;
+	text-field-width: 90px;
+	text-field-height: 25px;
+}
+
+FormButton:over
+{
+	background-color-alpha: 1;
+}
+
+#homeSlideButton{
+	x: 20px;
+	y: 300px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 2px;
+	padding-bottom: -2px;
+	color: #ffffff;
+	background-color: #ffffff;
+	background-color-alpha: 0;
+}
+
+#homeSlideButton:over{
+	color: #000000;
+	background-color-alpha: 1;
+}
+
+FormButton #section0Button{};
+
+#section0Button:over{
+	color: #0099FF;
+	background-color-alpha: 1;
+}
+
+/* Section 1 Buttons */
+FormButton #section1Button
+{
+	text-field-width: 190px;
+}
+
+#section1Button:over
+{
+	color: #0099CC;
+	background-color-alpha: 1;
+}
+
+FormButton #parentDrawerMenuButton{
+	text-field-width: 190px;
+	color: #0099CC;
+	background-color: #ffffff;
+	background-color-alpha: 1;
+}
+
+#parentDrawerMenuButton:over
+{
+	color: #ffffff;
+	background-color: #0099CC;
+}
+
+FormButton #sectionMenuButton
+{
+	color: #0099CC;
+	text-field-width: 190px;
+	background-color-alpha: 1;
+	
+}
+
+FormButton #section1MenuButton{
+	text-field-width: 190px;
+	color: #0099CC;
+	background-color: #ffffff;
+	background-color-alpha: 1;
+}
+
+#section1MenuButton:over
+{
+	color: #ffffff;
+	background-color: #0099CC;
+}
+
+FormButton #section2MenuButton{
+	text-field-width: 190px;
+	color: #00AA80;
+	background-color: #ffffff;
+	background-color-alpha: 1;
+}
+
+#section2MenuButton:over
+{
+	color: #ffffff;
+	background-color: #00AA80;
+}
+
+FormButton #section2WakeUpMenuButton{
+	font-size: 14px;
+	text-field-width: 370px;
+	text-field-height: 20px;
+	color: #00AA80;
+	background-color: #ffffff;
+	background-color-alpha: 1;
+}
+
+#section2WakeUpMenuButton:over
+{
+	color: #ffffff;
+	background-color: #00AA80;
+}
+
+FormButton #section1SelectButton
+{
+	text-field-width: 190px;
+}
+
+#section1SelectButton:over{
+	color: #0099CC;
+	backgroundColor: #ffffff;
+	background-color-alpha: 1;
+}
+
+FormButton StudentSelectionButton
+{
+	color: #ffffff;
+	text-field-width: 190px;
+}
+
+StudentSelectionButton:over{
+	color: #000000;
+	backgroundColor: #ffffff;
+	background-color-alpha: 1;
+}
+
+#section1Button #section1SmallButton{
+	text-field-width: 100;
+}
+
+#section1SmallButton:over{
+	color: #0099CC;
+	background-color: #ffffff;
+	background-color-alpha: 1;
+}
+
+FormButton #studentSmallButton{
+	text-field-width: 100px;
+}
+
+#studentSmallButton:over{
+	color: #000000;
+	background-color: #ffffff;
+	background-color-alpha: 1;
+}
+
+/* Section 2 Buttons */
+
+FormButton #section2Button
+{
+}
+
+#section2Button:over{
+	color: #00AA80;
+}
+
+FormButton #section3Button {
+}
+
+#section3Button:over{
+	color: #00BB40;
+}
+
+FormButton #section4Button
+{
+}
+
+#section4Button:over{
+	color: #00DD00;
+}
+
+/*
+*********
+Submits
+*********
+*/
+
+FormButton RingtoneSubmit{
+	textFieldWidth: 110px;
+	textFieldHeight: 25px;
+}
+
+RingtoneSubmit:over{
+	color: #00AA80;
+	background-color-alpha: 1;
+}
+
+FormButton WakeUpCallSubmit{
+	textFieldWidth: 130px;
+	textFieldHeight: 25px;
+}
+
+WakeUpCallSubmit:over{
+	color: #00AA80;
+	background-color-alpha: 1;
+}
+
+FormButton WakeUpCallButton{
+	textFieldWidth: 220px;
+	textFieldHeight: 25px;
+	padding-left: 5px;
+	padding-right: 5px;
+	size: 16;
+	color: #ffffff;
+	clear-box-model: background;
+}
+
+WakeUpCallButton:over{
+	color: #00AA80;
+	background-color: #ffffff;
+}
+
+SubSectionButton{
+	padding-left: 5px;
+	padding-right: 5px;
+	clear-box-model: background;
+}
+
+SubSectionButton:over{
+	background-color: #ffffff;
+}
+
+parentDrawerSubMenuButton:over{
+	color: #0099FF;
+}
+
+section0SubMenuButton:over{
+	color: #0099FF;
+}
+
+section1SubMenuButton:over{
+	color: #0099CC;
+}
+
+section2SubMenuButton:over{
+	color: #00AA80;
+}
+
+section3SubMenuButton:over{
+	color: #00BB40;
+}
+
+section4SubMenuButton:over{
+	color: #00DD00;
+}
+
+SubmitButton{
+	/*
+	tab-index: 3;
+	focus-rect: true;
+	*/
+}
+
+CancelButton{
+	/*
+	tab-index: 4;
+	focus-rect: true;
+	*/
+}
+
+BackButton{
+	y:115px;
+	padding-left: -55px;
+	background-image: url( '/pub/e/img/HomePageArrowLeft_Up.png' );
+	background-repeat: no-repeat;
+	background-position:  -10 7;
+}
+
+BackButton StudentBackButton{
+	y:55px;
+	padding-left: -40px;
+	background-position: 5 7;
+}
+
+FormButton #formCancel{
+	x: 630px;
+	y: 265px;
+	textFieldWidth: 90px;
+	textFieldHeight: 25px;
+}
+
+#formCancel:over{
+	color: #ffffff;
+	background-color: #0099CC;	
+}
+
+#section2Button #ringToneButton
+{
+	text-field-width: 190px;
+}
+
+#ringToneButton:over
+{
+	color: #ffffff;
+	backgroundColor: #00AA80;
+}
+
+FormButton FriendMiniBoostMenuButton{
+	textFieldWidth: 480px;
+	color: #0099CC;
+	background-color: #ffffff;
+	background-color-alpha: 1;
+}
+
+FriendMiniBoostMenuButton:over{
+	color: #ffffff;
+	background-color: #0099CC;
+	background-color-alpha: 1;
+}
+
+FormButton ParentTextMenuButton{
+	textFieldWidth: 480px;
+	color: #0099ff;
+	background-color: #ffffff;
+	background-color-alpha: 1;
+}
+
+ParentTextMenuButton:over{
+	color: #ffffff;
+	background-color: #0099ff;
+	background-color-alpha: 1;
+}
+
+FormButton StudentMiniBoostMenuButton{
+	textFieldWidth: 480px;
+	color: #0099CC;
+	background-color: #ffffff;
+	background-color-alpha: 1;
+}
+
+StudentMiniBoostMenuButton:over{
+	color: #ffffff;
+	background-color: #0099CC;
+	background-color-alpha: 1;
+}
+
+FormButton IndividualStudentMiniBoostMenuButton{
+	textFieldWidth: 480px;
+	color: #000000;
+	background-color: #ffffff;
+	background-color-alpha: 1;
+}
+
+IndividualStudentMiniBoostMenuButton:over{
+	color: #ffffff;
+	background-color: #000000;
+	background-color-alpha: 1;
+}
+
+FormButton SendAnotherBoostButton{
+	color: #ffffff;
+	background-color: #0099CC;
+	background-color-alpha: 0;
+	textFieldWidth: 140px;
+}
+
+SendAnotherBoostButton:over{
+	color: #0099CC;
+	background-color: #ffffff;
+	background-color-alpha: 1;
+}
+
+FormButton WakeUpSendAnotherBoostButton{
+	color: #ffffff;
+	background-color: #00AA80;
+	background-color-alpha: 1;
+	textFieldWidth: 220px;
+}
+
+WakeUpSendAnotherBoostButton:over{
+	color: #00AA80;
+	background-color: #ffffff;
+	background-color-alpha: 1;
+}
+
+FormButton StudentSendAnotherBoostButton{
+	color: #ffffff;
+	textFieldWidth: 140px;
+}
+
+StudentSendAnotherBoostButton:over{
+	color: #000000;
+	background-color: #ffffff;
+	background-color-alpha: 1;
+}
+
+#studentSectionSelectButton{
+	
+}
+
+/*
+****************************************************************************************************************************************
+DROPDOWNS
+****************************************************************************************************************************************
+*/
+
+DropDown{
+	width: 190;
+	height: 25;
+	textFieldWidth: 170px;
+	textFieldHeight: 15px;
+	font-size: 16px;
+	color: #FFFFFF;
+	background-image: url('/pub/e/img/dropdownarrow_ffffff.png');
+	background-repeat: no-repeat;
+	background-position:  170 8;
+	padding-top: 1px;
+	padding-bottom: -1px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: #ffffff;
+}
+
+DropDown:over{
+	background-color-alpha: 1;
+}
+
+DropDown WakeUpCallsDropDown{
+	color: #00AA80;
+	background-image: url('/pub/e/img/dropdownarrow_00AA80.png');
+}
+
+WakeUpCallsDropDown:error{
+	background-color: #ffff00;
+}
+
+WakeUpCallsDropDown WakeUpCallsDropDownLong{
+	width: 370;
+	textFieldWidth: 350px;
+	background-position:  355 8;
+}
+
+WakeUpCallsDropDownLong:error{
+	background-color: #ffff00;
+}
+
+WakeUpCallsDropDown #MonthDropDown
+{
+	width: 110px;
+	textFieldWidth: 100px;
+	background-position: 95 8;	
+}
+
+#MonthDropDown:error{
+	background-color: #ffff00;
+}
+
+WakeUpCallsDropDown #DateDropDown
+{
+	width: 60px;
+	textFieldWidth: 40px;
+	background-position: 45 8;	
+}
+
+#DateDropDown:error{
+	background-color: #ffff00;
+}
+
+DropDown SendBoostDropDown{
+	color: #0099CC;
+	background-image: url('/pub/e/img/dropdownarrow_0099CC.png');
+}
+
+SendBoostDropDown:error{
+	background-color: #ffff00;
+}
+
+DropDown RingtoneDropDown{
+	color: #00AA80;
+	background-image: url('/pub/e/img/dropdownarrow_00AA80.png');
+}
+
+RingtoneDropDown:error{
+	background-color: #ffff00;
+}
+
+DropDown FriendMiniBoostDropDown{
+	width: 480px;
+	color: #0099CC;
+	background-image: url('/pub/e/img/dropdownarrow_0099CC.png');
+	background-position:  460 8;
+}
+
+FriendMiniBoostDropDown:error{
+	background-color: #ffff00;
+}
+
+DropDown ParentTextDropDown{
+	width: 480px;
+	color: #0099ff;
+	background-image: url('/pub/e/img/dropdownarrow_0099FF.png');
+	background-position:  460 8;
+}
+
+ParentTextDropDown:error{
+	background-color: #ffff00;
+}
+
+DropDown StudentMiniBoostDropDown{
+	width: 480px;
+	auto-size: none;
+	textFieldWidth: 440px;
+	textFieldHeight: 25px;
+	color: #0099CC;
+	background-image: url('/pub/e/img/dropdownarrow_0099CC.png');
+	background-position:  460 8;
+}
+
+StudentMiniBoostDropDown:error{
+	background-color: #ffff00;
+	background-color-alpha: 1;
+}
+
+StudentMiniBoostDropDown IndividualStudentMiniBoostDropDown{
+	color: #000000;
+	background-image: url('/pub/e/img/dropdownarrow_000000.png');
+}
+
+IndividualStudentMiniBoostDropDown:error{
+	background-color: #ffff00;
+	background-color-alpha: 1;
+}
+
+
+/*
+****************************************************************************************************************************************
+MENUS
+****************************************************************************************************************************************
+*/
+
+verticalLayout RingtoneMenu{
+	x: 20px;
+	y: 368px;
+	width: 200px;
+	gap: 0px;
+}
+
+verticalLayout classMenu{
+	x: 72px;
+	width: 200px;
+	gap: 0px;
+}
+
+classMenu classMenu0{
+	y: 360px;
+}
+
+classMenu classMenu1{
+	y: 386px;
+}
+
+#ringToneMenu
+{
+	x: 42px;
+	y: 168px;
+	width: 200px;
+	gap: 0px;	
+}
+
+#wakeUpCallsMenu
+{
+	x: 42px;
+	y: 58px;
+	width: 200px;
+	gap: 0px;	
+}
+
+#wakeUpTimeMenu
+{
+	x: 452px;
+	y: 208px;
+	width: 200px;
+	gap: 0px;	
+}
+
+#wakeUpDayMenu
+{
+	x: 562px;
+	y: 50px;
+	width: 60px;
+	gap: 0px;	
+}
+
+#wakeUpMonthMenu
+{
+	x: 452px;
+	y: 200px;
+	width: 200px;
+	gap: 0px;	
+}
+
+#section2MenuButton #section2MonthButton{
+	text-field-width: 110px;
+}
+
+#section2MonthButton:over{
+	text-field-width: 110px;
+	color: #ffffff;
+	background-color: #00AA80;
+}
+
+#section2MenuButton #section2DateButton{
+	text-field-width: 90px;
+	text-field-height: 19px;
+	font-size: 12px;
+}
+
+#section2DateButton:over{
+	text-field-width: 90px;
+	color: #ffffff;
+	background-color: #00AA80;
+}
+
+#timezoneMenu
+{
+	x: 452px;
+	y: 418px;
+	width: 200px;
+	gap: 0px;	
+}
+
+FriendMiniBoostMenu{
+	direction: below;
+	x: 98px;
+	y: 348px;
+	width: 480px;
+	gap: 0px;
+}
+
+ParentTextMenu{
+	direction: below;
+	x: 30px;
+	y: 305px;
+	width: 480px;
+	gap: 0px;
+}
+
+StudentMiniBoostMenu{
+	direction: below;
+	x: 88px;
+	y: 358px;
+	width: 480px;
+	gap: 0px;
+}
+
+IndividualStudentMiniBoostMenu{
+	direction: below;
+	x: 20px;
+	y: 445px;
+	width: 480px;
+	gap: 0px;
+}
+
+/*
+****************************************************************************************************************************************
+TEXT INPUT
+****************************************************************************************************************************************
+*/
+
+#formMessageInput{
+	font-size: 14px;
+	textFieldWidth: 400px;
+	textFieldHeight: 95px;
+	padding-left: 5px;
+	padding-right: 5px;
+	tab-index: 0;
+}
+
+#formMessageInput:error{
+	background-color: #FFFF00;
+}
+
+#studentFormMessageInput{
+	y: 10px;
+	font-size: 14px;
+	textFieldWidth: 400px;
+	textFieldHeight: 85px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#studentFormMessageInput:error{
+	background-color: #FFFF00;
+}
+
+PhoneInput{
+	font-size: 14px;
+	textFieldWidth: 170px;
+	textFieldHeight: 25px;
+	padding-left: 5px;
+	padding-right: 5px;
+	validationType: phone;
+	max-chars: 12;
+}
+
+PhoneInput:error{
+	background-color: #ffff00;
+}
+
+Phone1{
+	tab-index: 1;
+}
+
+Phone2{
+	tab-index: 2;
+}
+
+SMSInput{
+	max-chars: 140;	
+}
+
+StudentEmail{
+	height: 25px;
+}
+
+EmailInput{
+	font-size: 14px;
+	textFieldWidth: 270px;
+	textFieldHeight: 25px;
+	padding-left: 5px;
+	padding-right: 5px;
+	validationType: email;
+	tab-index: 1;
+}
+
+EmailInput #formEmail1{}
+
+#formEmail1:error{
+	background-color: #FFFF00;
+	tab-index: 1;
+}
+
+EmailInput #formEmail2{}
+
+#formEmail2:error{
+	background-color: #FFFF00;
+	tab-index: 2;
+}
+
+StudentEmailDisplay{
+	height: 0px;
+	width: 0px;
+	overflow: hidden;
+}
+
+EmailInput StudentFormEmail2{
+}
+
+StudentFormEmail2:error{
+	background-color: #FFFF00;
+}
+
+/*
+****************************************************************************************************************************************
+TEXT FIELDS
+****************************************************************************************************************************************
+*/
+
+#formTitle{
+	x: 20px;
+	y: 16px;
+	height: 100px;
+	width: 500;
+	font-size: 88px;
+	line-spacing: 90px;
+	letter-spacing: 0px;
+	color: #ffffff;
+	overflow: hidden;
+	padding-top: -23px;
+	padding-left: -5px;
+}
+
+#formDescription{
+	x: 16px;
+	y: 100px;
+	textFieldWidth: 500px;
+	font-size: 24px;
+	line-spacing: 24px;
+	letter-spacing: -1px;
+	color: #ffffff;
+	auto-size: left;
+}
+
+/*#StepLabel
+{
+size: 88px;
+x: 20;
+y: 130;
+}*/
+
+
+#formStep{
+	font-size: 88px;
+	color: #ffffff;
+}
+
+Step1{
+	padding-left: -20px;
+	padding-top: -26;
+	padding-right: 10px;
+}
+
+Step2{
+	padding-left: -14px;
+	padding-top: -26;
+	padding-right: 13px;
+}
+
+Step3{
+	padding-left: -4px;
+	padding-top: -26;
+	padding-right: 10px;
+}
+
+SendDescription{
+	font-size: 18px;
+	textFieldWidth: 220px;
+}
+
+SendDescription1{}
+
+SendDescription2{}
+
+SendDescription3{}
+
+SuccessTextArea{
+	textFieldWidth: 400px;
+	auto-size: left;
+	font-size: 24px;
+}
+
+SuccessTextArea StudentSuccessTextArea{
+	font-size: 20px;
+}
+
+/*
+****************************************************************************************************************************************
+OTHER
+****************************************************************************************************************************************
+*/
+
+.ReasonSlideShow{
+	y: 200px;
+}
+
+ReasonSlideDisplay{
+	width: 790px;
+	height: 80px;
+	overflow: hidden;
+}
+
+#layout@reasonSlide{
+	gap: 25px;
+}
+
+#number@reasonSlide{
+	padding-top: -20;
+	font-size: 88px;
+}
+
+#textArea@reasonSlide{
+	textFieldWidth: 700px;
+	textFieldHeight: 80px;
+	font-size: 28px;
+}
+
+SuccessLayout{
+	y: 150px;
+}
+
+StudentSuccessLayout{
+	gap: 0px;
+}
+
+column1Layout{
+	gap: 0px;
+}
+
+column2Layout{
+	gap: 0px;
+}
+
+SendBoostSelector{
+	gap: 1px;	
+}
+
+
+/* Form elements Styles */
+
+ringtoneCol
+{
+	padding-left: -100;
+}
+
+selectionCol
+{
+	y: 178;
+}
+
+studentSelectionCol{
+	gap: 8;
+}
+
+selectionCol selectionCol1{}
+
+selectionCol selectionCol2{}
+
+#formSmallText
+{
+	size: 10px;
+	width: 200px;
+}
+
+#lastYearSelector
+{
+	
+}
+
+#currentYearSelector
+{
+	
+}
+
+#PersonSelector
+{
+	y: 180px;
+	
+}
+
+
+#emailFriend
+{
+	y: 160px;
+	gap: 25px;
+	direction: right;
+}
+
+#buttonGroup
+{
+	padding-top: 30px;
+	direction: right;
+}
+
+/* Wake Up Form */
+
+#wakeupForm
+{
+	y: -20;	
+}
+
+#wakeupCol
+{
+	width: 190;
+	padding-right: 30px;
+}
+
+/***********************************************************/
+
+/* CSS file */
+
+/* Section Templates */
+templateA
+{
+	/* Not working correctly padding: 10 20; */
+	width: 940px;
+	/*padding-top: 10;*/
+	padding-right: 20;
+	/*padding-bottom: 10;*/
+	padding-left: 20;
+	min-height: 90;
+	max-height: 330;
+	header-offset: -60;
+	background-color: #ffffff;
+	background-color-alpha: 0;
+	overflow: hidden;	
+}
+
+templateA templateB
+{
+	max-height: 500;
+}
+
+templateA templateC
+{
+	max-height: 330;
+}
+
+templateA templateD
+{
+	max-height: 430;
+}
+
+/* Core Section Styles */
+#SectionHeaderTitle
+{	
+	size: 88px;
+	letterSpacing: -6;
+	padding-top: -15;
+	padding-bottom: -5;
+	text-field-width: 800px;
+	overflow: visible;
+	width: 800px;
+	background-color: #ff0000;
+	background-color-alpha: 0;
+}
+
+#SectionHeaderBody
+{
+	auto-size: left;
+	size: 24px;
+	leading: -5;
+	letterSpacing: -1;
+	text-field-width: 800px;
+	color: #FFFFFF;
+}
+
+#FormDrawerHeader
+{
+	color:#ffffff;
+}
+
+#SectionHeaderBody:error
+{
+	color: #FFFF00;
+}
+
+#CloseButton
+{
+	margin-bottom: 10;
+	size: 18;
+}
+
+DrawerButtonLayout{
+	gap: 20px;
+	y: 300px;
+}
+
+.SectionSubMenu
+{
+	x: 660px;
+	y: 20px;
+	width: 290px;
+	height: 330px;
+}
+
+#WakeUpDrawerSubMenu
+{
+	x: 0;
+	y: 180;
+}
+
+#SendBoostDrawerSubMenu
+{
+	x: 10;
+	y: 180;
+	direction: right;
+	gap: 10px;
+}
+
+baseFormPosition
+{
+	x: 10;
+	y: 168;
+}
+
+horizontalLayout StudentTextFormLayout{
+	
+}
+
+horizontalLayout StudentMiniBoostLayout{
+}
+
+baseFormPosition #friendBoostSelector { }
+
+baseFormPosition #studentBoostSelector { }
+
+individualStudentBoostSelector{
+	
+}
+
+/* Drawer Styles */
+templateA .VerticalDrawer { }
+
+.VerticalDrawer:over { }
+
+templateD .SubSectionDrawer  { }
+
+.SubSectionDrawer:over { }
+
+templateD .ParentDrawer{ }
+
+ParentDrawer:over{ }
+
+templateA .WakeUpDrawer{ }
+
+.WakeUpDrawer:over { }
+
+templateA .SendBoostDrawer{ }
+
+.SendBoostDrawer:over { }
+
+templateA .CampaignDrawer { }
+
+.CampaignDrawer:over { }
+
+templateA .ReasonsBoostDrawer{ }
+
+.ReasonsBoostDrawer:over { }
+
+
+.header{
+	font-size : 18px;
+}
+
+.body{
+	font-size: 14px;
+}
+
+baseSectionHeaderText #VerticalDrawerTextArea
+{
+	y: 140px;
+	size: 16px;
+	width: 800px;
+	height: 130px;
+	text-field-width: 800px;
+	text-field-height: 130px;
+	leading: 0px;
+	style-sheet: .header, .body
+}
+
+.VerticalMenu
+{
+	width: 960;
+	height: 540px;
+	overflow: hidden;
+	gap: 10px;
+}
+
+#VerticalDrawerTextArea #SubSectionDrawerTextArea
+{
+	text-field-width: 600px;
+	text-field-height: 230px;
+	leading: 0px;
+	letter-spacing: 0px;
+	color: #ffffff;
+	font-size: 16px;
+	font-face: Helvetica Neue;
+	embedFonts: true;
+}
+
+/* Section Roll Over Colors */
+
+baseSectionOver
+{
+	background-color-alpha: 1;
+}
+
+baseSectionOver #section0:over
+{
+	background-color: #0099FF;
+}
+
+baseSectionOver #section1:over
+{
+	background-color: #0099CC;
+}
+
+baseSectionOver #section2:over
+{
+	background-color: #00AA80;
+}
+
+baseSectionOver #section3:over {
+	background-color: #00BB40;
+}
+
+baseSectionOver #section4:over
+{
+	background-color: #00DD00;
+}
+
+templateC .SendBoostDrawer
+{
+	width: 960;
+}
+
+#parentSection{
+	width: 960px;
+	height: 540px;
+	overflow: false;
+}
+
+baseSectionOver #parentDrawer:over{
+	y: 60px;
+	max-height: 430px;
+	width: 960px;
+	background-color: #0099FF;
+	padding-left: 18px;
+}
+
+#ParentDrawerSubMenu{
+	y: 20px;
+}
+
+#VerticalDrawerTextArea #ParentDrawerTextArea
+{
+	leading: 0px;
+	text-field-width: 600px;
+	text-field-height: 230px;
+}
+
+#ReasonsBoostDrawerTextArea{
+	textFieldWidth: 0px;
+	textFieldHeight: 0px;
+}
+
+#VerticalDrawerTextArea #ParentDrawerTextArea
+{
+	text-field-width: 600px;
+	text-field-height: 230px;
+}
+
+templateB .CampaignDrawer
+{
+	max-height: 330px;
+}
+
+.CampaignDrawer:over
+{
+	background-color: #00DD00;
+}
+
+
+/***********************************************************/
+/***********************************************************/
+/***********************************************************/
+/***********************************************************/
+/***********************************************************/
+
+VideoItemThumb{
+	width: 100px;
+}
+
+VideoItemTitle{
+	x: 105px;
+	color: #ffffff;
+	font-size: 14px;
+	padding-left: 5px;
+	padding-right: 5px;
+	textFieldWidth: 155px;
+	textFieldHeight: 18px;
+	clear-box-model: background;
+}
+
+VideoItemTitle:over{
+	color: #000000;
+	background-color: #ffffff;
+}
+
+VideoItemDescription{
+	x: 110px;
+	y: 20px;
+	color: #ffffff;
+	font-size: 11px;
+	textFieldWidth: 170px;
+	textFieldHeight: 40px;
+}
+
+.VideoNavItem{
+	background-color: #000000;
+}
+
+.VideoPlayer{
+	width: 960px;
+	height: 540px;
+}
+
+#videoControls
+{
+	x: 362;
+	y: 0;
+	width: 598;
+	height: 25;
+	background-color: #000000;
+	overflow: hidden;
+}
+
+#loadTrack 
+{
+	x: 245;
+	y: 6;
+	width: 228;
+	height: 12;
+	background-color: #000000;
+}
+
+#currentLoad 
+{
+	x: 0;
+	y: 4;
+	width: 228;
+	height: 4;
+	background-color: #FFFFFF;
+}
+
+#totalLoad 
+{
+	x: 0;
+	y: 4;
+	width: 228;
+	height: 4;
+	background-color: #999999;
+}
+
+#videoTitle
+{	
+	x: 10;
+	y: 4;
+	font-face: Helvetica Neue;
+	word-wrap: false;
+	multi-line:false;
+	size: 12;
+	embedFonts: true;
+	color: #ffffff;
+	letter-spacing: .25;
+	width: 210;
+	textFieldWidth: 210px;
+}
+
+#volumeControls
+{
+	x: 528;
+	y: 2;
+	width: 70;
+	height: 20;
+	background-color: #000000;	
+}
+
+#volumeTrack
+{
+	x: 0;
+	y: 8;
+	width: 70;
+	height: 4;
+	background-color: #999999;
+}
+
+#volumeSlider
+{
+	x: 0;
+	y: 0;
+	width: 0;
+	height: 4;
+	background-color: #FFFFFF;
+}
+
+#replayButton
+{
+	width: 150;
+	height: 132;
+	alpha: .75;
+	background-image: url('/pub/e/img/reload.png');
+}
+
+#replayButton:over
+{
+	width: 150;
+	height: 132;
+	alpha: 1;
+	background-image: url('/pub/e/img/reload.png');
+}
+
+/* Speaker Button */
+#SpeakerButton{
+	width: 12px;
+	height: 12px;
+	auto-size: none;
+	textFieldWidth: 0px;
+	textFieldHeight: 0px;
+	background-color: #ffffff;
+	background-image: url('/pub/e/img/green_speaker.gif');
+	background-repeat: no-repeat;
+	background-position: 3 3;
+}
+
+#videoPlayButton {
+	x: 229;
+	y: 7;	
+	width: 10;
+	height: 10;
+}
+
+#videoPlayButton:untoggled {	
+	background-image: url("/pub/e/img/VideoPlay.png");
+}
+
+#videoPlayButton:toggled {
+	background-image: url("/pub/e/img/VideoPause.png");
+}
+
+/* CSS file */
+/*
+Fonts:
+
+Marquee-Regular
+TradeGothic BoldCondTwenty
+Headline One HPLHS
+
+*/
+
+
+BaseTemplate
+{
+	width: 960;
+	height: 590;
+}
+
+.Label
+{
+	font: Marquee-Regular;
+	color: #000000;
+	size: 18;
+	letterSpacing: -1px;
+	embedFonts: true;
+}
+
+.TextArea
+{
+	font: Marquee-Regular;
+	color: #000000;
+	size: 18;
+	letterSpacing: -1px;
+	embedFonts: true;
+}
+
+.Label .LabelButton
+{
+	
+}
+
+.Label .TextInput
+{	
+	font: TradeGothic BoldCondTwenty;
+	size: 26;
+	border: 1px solid #000000 1;
+	backgroundColor: #ffffff;
+}
+
+.Label .GetSchooledTitle
+{
+	autoSize: left;
+	textFieldWidth: 900px;
+}
+
+.ScrollBar
+{
+	targetY: 0;
+	trackColor: 0xffffff;
+	trackWidth: 12px;
+	align: right;
+	margin-left: 30px;
+	arrows: true;
+}
+
+.ScrollBarHandle
+{
+	/*border: 1px solid #e03f23 0;
+	border-left: 10;
+	border-right: 10;
+	*/
+	width: 12px;
+	height: 53px;
+	/*
+	background-color: 0xF9EC31;
+	background-color-alpha: .8;
+	*/
+	background-image: url('http://www.getschooled.com/pub/n/img/assets/scroll_handle_bg.gif?v=21');
+	x: 1;
+	/*x: -9;*/
+}
+
+.ScrollBarTrack
+{
+	border: 1px solid #dedfdf;
+	width: 12px;
+	background-image: url('http://www.getschooled.com/pub/n/img/assets/scroll_track_bg.gif?v=21');
+}
+
+#scrollbarArrowUp
+{
+	width: 14px;
+	height: 14px;	
+	background-image: url('http://www.getschooled.com/pub/n/img/assets/scroll_arrow_up.png?v=21');
+	background-repeat: no-repeat;
+}
+
+#scrollbarArrowDown
+{
+	width: 14px;
+	height: 14px;
+	background-image: url('http://www.getschooled.com/pub/n/img/assets/scroll_arrow_down.png?v=21');
+	background-repeat: no-repeat;
+}
+
+a
+{
+	color: #000000;
+	text-decoration: underline
+}
+
+a:hover
+{
+	color: #FF0000;
+}
+
+#logo
+{
+	x: 720;
+	y: 500;
+}
+
+#mapClose
+{
+	backgroundColor: #FFF200;
+	x: 585px;
+}
+
+#mapLoader
+{
+	x: 153;
+	y: 125;
+}
+
+/*
+Start Contact Form
+*/
+
+#contactForm
+{
+	x: 330;
+	y: 100;
+	width: 330;
+	height: 385;
+}
+
+#required@contactForm
+{
+	x: 10;
+	y: 355;
+	size: 12;
+}
+
+#required@AndysCode
+{
+	x: 20;
+	y: 435;
+	size: 12;
+}
+
+#contactClose@contactForm
+{
+	x: 300;
+	y: 17;
+	width:14;
+	height:14;
+	backgroundImage: url("http://www.getschooled.com/pub/n/img/buttons/close.png?v=21");
+}
+
+#contactTitle@contactForm
+{
+	x: 10;
+	size: 40;
+}
+
+#send@contactForm
+{
+	x: 240;
+	y: 346;
+	font: TradeGothic BoldCondTwenty;
+	size: 24;
+	paddingLeft: 4;
+	paddingRight: 4;
+	color: #ffffff;
+	backgroundColor: #000000;
+}
+
+#nameInput@contactForm
+{
+	x: 10;
+	y: 70;
+	paddingLeft: 2;
+	maxChars: 24;
+	textFieldWidth: 200;
+	textFieldHeight: 30;
+	tabIndex: 0;
+	restrict: A-Z 0-9;
+	multiline: false;
+	wordwrap: false;
+}
+
+#nameInput@contactForm #emailInput@contactForm
+{
+	y: 110;
+	tabIndex: 1;
+	restrict: A-Z0-9@-/.;
+	maxChars: 1000;
+}
+
+#nameInput@contactForm:error
+{ 
+	color: #ec1c24;
+	border: 1px solid #000000 1;
+	backgroundColor: #ffffff;
+}
+
+#nameInput@contactForm:error #emailInput@contactForm:error {}
+
+.Label #nameError@contactForm
+{
+	x: 220;
+	y: 75;
+	font: TradeGothic BoldCondTwenty;
+	autoSize: left;
+	textFieldHeight: 30;
+	color: #e03f23;
+	size: 11.5;
+}
+
+#nameError@contactForm #emailError@contactForm
+{
+	y: 110;
+}
+
+#messageInput@contactForm
+{
+	x: 10;
+	y: 150;
+	textFieldWidth: 298;
+	textFieldHeight: 180;
+	tabIndex: 2;
+}
+
+#messageInput@contactForm:error
+{
+	color: #ec1c24;
+	border: 1px solid #000000 1;
+	backgroundColor: #ffffff;
+}
+
+.Label #success@contactForm
+{
+	x: 10;
+	y: 60;
+	font: TradeGothic BoldCondTwenty;
+	textFieldWidth: 298;
+	textFieldHeight: 300;
+}
+
+/*
+End Contact Form
+*/
+
+#footer
+{
+	y: 606;
+}
+
+#dashedButton@bottomNav
+{
+	width: 170;
+	height: 100;
+}
+
+#footerMenu
+{
+	x: 500;
+	y: 12;
+}
+
+#footerMenuButton
+{	
+	font: TradeGothic BoldCondTwenty;
+	color: #000000;
+	size: 10;
+	letterSpacing: 0px;
+}
+
+#footerMenuButton:over
+{	
+	color: #FFFFFF;
+	backgroundColor: #000000;
+}
+
+#footerMenuButton #footerMenuDiv
+{	
+}
+
+#footershareNavTitle
+{
+	text:SPREAD THE WORD;
+	color: #A3110F;
+	size: 21px;
+	x: 22px;
+	y: 2px;
+}
+
+#footershareNav
+{
+	gap: 17px;
+	x: 242px;
+	y: 6px;
+}
+
+#footershareNav@Facebook
+{
+	background-image: url("http://www.getschooled.com/pub/n/img/footer/facebook.png?v=21");
+	width: 24px;
+	height: 25px;
+	buttonMode: true;
+}
+
+#footershareNav@Facebook:over
+{
+}
+
+#footershareNav@Myspace
+{
+	background-image: url("http://www.getschooled.com/pub/n/img/footer/myspace.png?v=21");
+	width: 24px;
+	height: 25px;
+	buttonMode: true;
+}
+
+#footershareNav@Myspace:over
+{
+}
+
+#footershareNav@Twitter
+{
+	background-image: url("http://www.getschooled.com/pub/n/img/footer/twitter.png?v=21");
+	width: 24px;
+	height: 25px;
+	buttonMode: true;
+}
+
+#footershareNav@Twitter:over
+{
+}
+
+#footershareNav@Email
+{
+	background-image: url("http://www.getschooled.com/pub/n/img/footer/email.png?v=21");
+	width: 28px;
+	height: 20px;
+	y: 2px;
+	buttonMode: true;
+}
+
+#footershareNav@Email:over
+{
+}
+
+#actionLabel
+{
+	size: 18;
+	color:#a81211;
+	x: 40;
+	y: 10;
+	rotation: -2;
+	background: false;
+}
+
+#actionLabel:over
+{
+	color: #000000;
+}
+
+#header
+{
+	y: -50;
+	openY: 0;
+	closeY: -50;
+}
+
+#bg@header
+{
+	width: 960;
+	height: 50;
+	backgroundColor: #000000;
+}
+
+#headerContainer
+{
+	x: 10;
+}
+
+#headerMenu
+{
+	paddingLeft: 20;
+	paddingRight: 20;
+	gap: 40;
+	backgroundColor: #000000;
+	paddingTop: 5;
+}
+
+#headerButton
+{
+	size: 23;
+	color: #ffffff;
+	backgroundColor: #000000;
+	height: 50;
+	paddingBottom: -5;
+}
+
+#headerButton:selected
+{
+	color: #fff400;
+}
+
+#headerDropDown
+{
+	backgroundColor: #000000;
+	paddingBottom: 20;
+}
+
+#dropDownButton
+{
+	color: #ffffff;
+	size: 15;
+	backgroundColor: #000000;
+	paddingLeft: 40;
+	paddingRight: 40;
+}
+
+#dropDownButton:over
+{
+	color: #000000;
+	backgroundColor: #fff400;
+}
+
+#dropDownButton:selected
+{
+	color: #000000;
+	backgroundColor: #fff400;
+}
+
+#bytesLabel
+{
+	size:100;
+	x: -47;
+	y: -69;
+	autoSize:center;
+}
+
+/* template core styles */
+
+.redText
+{
+	color:#ec1c24;
+}
+
+.bodyText
+{
+	
+}
+
+baseBodyText
+{
+	font: TradeGothic BoldCondTwenty;
+	embedFonts: true;
+	color:#231f20;
+	leading: 0;
+	styleSheet: a, a:hover, .bodyText,.redText;
+	textFieldWidth: 500px;
+	autoSize: left;
+	size: 21px;
+}
+
+baseBodyText scrollingBodyText
+{
+	width: 500px;
+	height: 400px;
+	overflow: scroll;
+}
+
+titleText
+{
+	x: 28;
+	leading: 0;
+}
+
+/* Bill of Rights styles */
+
+baseBodyText #homepageTextAd
+{
+	x: 682px;
+	y: 20px;
+	textFieldWidth: 230;
+	font-size: 11;
+	font: Marquee-Regular;
+	sharpness: 100;
+	leading: -1;
+	letter-spacing: .5;
+	style-sheet: .homePageTextAdTitle,.homePageTextAdBody;
+}
+
+#textAdButton
+{
+	background-image: url('http://www.getschooled.com/pub/n/img/buttons/right_arrow.gif?v=21');
+	background-repeat:no-repeat;
+	x: 110;
+	y: 48;
+}
+
+#clickHereArrow
+{
+	background-image: url('http://www.getschooled.com/pub/n/img/buttons/arrow3.png?v=21');
+	background-repeat: no-repeat;
+	x: 120;
+	y: 8;
+	
+}
+
+#homepageTextAd #whatILikeTextAd
+{
+	x: 660px;
+	y: 370;
+}
+
+.homePageTextAdTitle
+{
+	color: #EC1C24;
+}
+
+.homePageTextAdBody
+{
+	/*font-family: TradeGothic BoldCondTwenty;*/
+}
+
+#menu@home
+{
+	x: 10;
+	y: 150;
+	gap: 25;
+}
+
+#videoButton@home
+{
+	x: 20;
+	y: 416;
+	font-size: 70;
+	leading: -30;
+}
+
+#textArea@dashedButton@bottomNav #textArea@dashedButton@home
+{
+	paddingTop: -20;
+	textFieldWidth: 280;
+	textFieldHeight: 180;
+	styleSheet: a, a:hover, .IWantA, .ToFind, .AwesomeJob, .IWantB, .ToChange, .TheSystem, .IWantC, .ToGetBack, .InSchool;
+}
+
+#clickHereButton
+{
+	size: 21px;
+}
+
+#textArea@clickHereButton
+{
+	textFieldWidth: 280;
+	textFieldHeight: 180;
+	styleSheet: a, a:hover, .IWantA, .ToFind, .AwesomeJob, .IWantB, .ToChange, .TheSystem, .IWantC, .ToGetBack, .InSchool;
+}
+
+#dashedButton@home
+{
+	width: 290;
+	height: 140;
+}
+
+#obama@home
+{
+	x: 145;
+	y: 329;
+}
+
+#arrow@home
+{
+	x: 195;
+}
+
+.Label #quote@home
+{	
+	x: 20;
+	y: 120;
+	textFieldWidth: 696;
+	textFieldHeight: 300;
+}
+
+#dashedLines@home
+{
+	x: 688;
+	y: 20;
+}
+
+#bucket1@home
+{
+	x: 710;
+	y: 40;
+	width: 215;
+	height: 106;
+	backgroundImage: url("http://www.getschooled.com/pub/n/img/assets/AwesomeJobClickHere.png?v=21");
+}
+
+#bucket2@home
+{
+	x: 710;
+	y: 170;
+	width: 223;
+	height: 100;
+	backgroundImage: url("http://www.getschooled.com/pub/n/img/assets/MakeAFilmClickHere3.png?v=21");
+}
+
+#bucket2B@home
+{
+	x: 710;
+	y: 170;
+	width: 215;
+	height: 130;
+	backgroundImage: url("http://www.getschooled.com/pub/n/img/assets/YearbookChroniclesClickHere.png?v=21");
+}
+
+#bucket3@home
+{
+	x: 710;
+	y: 330;
+	width: 203;
+	height: 96;
+	backgroundImage: url("http://www.getschooled.com/pub/n/img/assets/YouNeedToClickHere.png?v=21");
+}
+
+#bucket4@home
+{
+	x: 22;
+	y: 370;
+	width: 292;
+	height: 14;
+	backgroundImage: url("http://www.getschooled.com/pub/n/img/assets/MovementClickHere.png?v=21");
+}
+
+/* End Home styles */
+
+/* FincancialCalculator styles */
+
+titleText #financialCalculatorTitle
+{
+	x: 24;
+	y: 0;
+	leading: -38;
+}
+
+baseBodyText #financialCalculatorBody
+{
+	x: 20px;
+	y: 165px;
+	styleSheet: a, a:hover, .redText;
+	textFieldWidth: 500px;
+	autoSize: left;
+	size: 17px;	
+	leading: 0;
+}
+
+.Label #item@financialCalculatorLabelList
+{
+	textFieldWidth: 400;
+	textFieldHeight: 60;
+}
+
+#sideTitle@financialCalculator
+{
+	x: 570;
+	y: 170;
+	background-color: #ec1c24;
+	color: #ffffff;
+	width: 270px;
+	height: 20px;
+	padding-left: 10px;
+}
+
+titleText #financialCalculatorSubSectionTitle
+{
+	x: 24;
+	y: 0;
+	leading: -38;
+}
+
+baseBodyText #financialCalculatorSubSectionBody
+{
+	x: 20px;
+	y: 165px;
+	styleSheet: a, a:hover, .redText;
+	textFieldWidth: 500px;
+	autoSize: left;
+	size: 17px;	
+	leading: 0;
+}
+
+.Label #item@financialCalculatorSubSectionLabelList
+{
+	textFieldWidth: 400;
+	textFieldHeight: 60;
+}
+
+#sideTitle@financialCalculatorSubSection
+{
+	x: 600;
+	y: 145;
+	color: #ec1c24;
+}
+
+/* End FinancialCalculator styles */
+
+/* Bill of Rights styles */
+
+titleText #billOfRightsTitle
+{
+	x: 24;
+	y: -4;
+	leading: -50;
+}
+
+baseBodyText #billOfRightsBody
+{
+	x: 525px;
+	y: 20px;
+	styleSheet: a, a:hover, .redText;
+	textFieldWidth: 400px;
+	autoSize: left;
+	size: 17px;	
+	leading: 0;
+}
+
+#item@billOfRightsLabelList
+{
+	textFieldWidth: 450;
+	textFieldHeight: 60;
+}
+
+/* End Bill of Rights styles */
+
+/* Rights styles */
+
+titleText #rightSubTitle
+{
+	x: 24;
+	y: -14;
+	color: #EC1C24;
+	size: 36;
+	leading: -38;
+}
+
+titleText #councelingrightSubTitle
+{
+	x: 24;
+	y: -14;
+	color: #EC1C24;
+	size: 36;
+	leading: -38;
+}
+
+titleText #teachersrightSubTitle
+{
+	x: 24;
+	y: -14;
+	color: #EC1C24;
+	size: 36;
+	leading: -38;
+}
+
+titleText #classesrightSubTitle
+{
+	x: 24;
+	y: -14;
+	color: #EC1C24;
+	size: 36;
+	leading: -38;
+}
+
+titleText #progressrightSubTitle
+{
+	x: 24;
+	y: -14;
+	color: #EC1C24;
+	size: 36;
+	leading: -38;
+}
+
+titleText #financialrightSubTitle
+{
+	x: 24;
+	y: -14;
+	color: #EC1C24;
+	size: 36;
+	leading: -38;
+}
+
+titleText #finishrightSubTitle
+{
+	x: 24;
+	y: -14;
+	color: #EC1C24;
+	size: 36;
+	leading: -38;
+}
+
+titleText #rightTitle
+{
+	x: 24;
+	y: 10;
+	textFieldWidth: 500;
+	styleSheet: a, a:hover, .theRightTo, .rightTeachers1, .rightTeachers2, .rightAdvancedClasses;
+}
+
+titleText #counselingrightTitle
+{
+	x: 24;
+	y: 10;
+	textFieldWidth: 500;
+	styleSheet: a, a:hover, .theRightTo, .rightTeachers1, .rightTeachers2, .rightAdvancedClasses;
+}
+
+titleText #teachersrightTitle
+{
+	x: 24;
+	y: 10;
+	textFieldWidth: 500;
+	styleSheet: a, a:hover, .theRightTo, .rightTeachers1, .rightTeachers2, .rightAdvancedClasses;
+}
+
+titleText #classesrightTitle
+{
+	x: 24;
+	y: 10;
+	textFieldWidth: 500;
+	styleSheet: a, a:hover, .theRightTo, .rightTeachers1, .rightTeachers2, .rightAdvancedClasses;
+}
+
+titleText #progressrightTitle
+{
+	x: 24;
+	y: 10;
+	textFieldWidth: 500;
+	styleSheet: a, a:hover, .theRightTo, .rightTeachers1, .rightTeachers2, .rightAdvancedClasses;
+}
+
+titleText #financialrightTitle
+{
+	x: 24;
+	y: 10;
+	textFieldWidth: 500;
+	styleSheet: a, a:hover, .theRightTo, .rightTeachers1, .rightTeachers2, .rightAdvancedClasses;
+}
+
+titleText #finishrightTitle
+{
+	x: 24;
+	y: 10;
+	textFieldWidth: 500;
+	styleSheet: a, a:hover, .theRightTo, .rightTeachers1, .rightTeachers2, .rightAdvancedClasses;
+}
+
+#container@right
+{
+	x: 25;
+	y: 200;
+	width: 500;
+	height: 300;
+	overflow: scroll;
+}
+
+#container@counselingright
+{
+	x: 25;
+	y: 200;
+	width: 500;
+	height: 300;
+	overflow: scroll;
+}
+
+#container@teachersright
+{
+	x: 25;
+	y: 170;
+	width: 500;
+	height: 330;
+	overflow: scroll;
+}
+
+#container@classesright
+{
+	x: 25;
+	y: 200;
+	width: 500;
+	height: 300;
+	overflow: scroll;
+}
+
+#container@progressright
+{
+	x: 25;
+	y: 170;
+	width: 500;
+	height: 330;
+	overflow: scroll;
+}
+
+#container@financialright
+{
+	x: 25;
+	y: 220;
+	width: 500;
+	height: 280;
+	overflow: scroll;
+}
+
+#container@finishright
+{
+	x: 25;
+	y: 240;
+	width: 500;
+	height: 250;
+	overflow: scroll;
+}
+
+#container@rightScrollBar
+{
+	/*marginLeft: 76;
+	paddingTop: -3;*/
+}
+
+baseBodyText #body@right
+{
+	textFieldWidth: 500;
+}
+
+baseBodyText #body@counselingright
+{
+	textFieldWidth: 500;
+}
+
+baseBodyText #body@teachersright
+{
+	textFieldWidth: 500;
+}
+
+baseBodyText #body@classesright
+{
+	textFieldWidth: 500;
+}
+
+baseBodyText #body@progressright
+{
+	textFieldWidth: 500;
+}
+
+baseBodyText #body@financialright
+{
+	textFieldWidth: 500;
+}
+
+baseBodyText #body@finishright
+{
+	textFieldWidth: 500;
+}
+
+.theRightTo
+{
+	color: #EC1C24;
+	font-size: 36;
+	letter-spacing: 1.6;
+	leading: -10;
+}
+
+.rightTeachers1
+{
+	font-size: 36;
+	leading: -15;
+}
+
+.rightTeachers2
+{
+	font-size: 54;
+	letter-spacing: .5;
+}
+
+.rightAdvancedClasses
+{
+	font-size: 50;
+}
+
+/* End Rights styles */
+
+/* ShareNav styles */
+
+.Label HighlightLabelButtonLabel
+{
+	size: 16;
+	paddingLeft: 10;
+	paddingRight: 15;
+	textFieldWidth: 180;
+	autoSize: left;
+}
+
+#shareNav
+{
+	x: 600;
+	y: 200;
+	gap: 0;
+}
+
+#write@shareNavLabel
+{
+	size: 16;
+	textFieldWidth: 180;
+	autoSize: left;
+	multiline: true;
+	leading: -3px;
+}
+
+#send@shareNavLabel
+{
+	size: 16;
+	textFieldWidth: 180;
+	autoSize: left;
+	multiline: true;
+	leading: -3px;
+}
+
+#facts@shareNavLabel
+{
+	size: 16;
+	textFieldWidth: 180;
+	autoSize: left;
+	multiline: true;
+	leading: -3px;
+}
+
+/* End ShareNav styles */
+
+/* Write Washington styles */
+
+
+.Label #success@form@writeWashington
+{
+	font: TradeGothic BoldCondTwenty;
+	textFieldWidth: 355;
+	textFieldHeight: 300;
+}
+
+titleText #writeWashingtonTitle
+{
+	x: 24;
+	y: -14;
+	leading: -38;
+}
+
+baseBodyText #writeWashingtonBody
+{
+	x: 525px;
+	y: 10px;
+	styleSheet: a, a:hover, .redText;
+	textFieldWidth: 400px;
+	autoSize: left;
+	size: 17px;	
+	leading: 0;
+}
+
+#governorSelector
+{
+	x: 0;
+	y: 175;
+}
+
+#governorSelectorBG
+{
+	width: 485;
+	height: 90;
+	backgroundColor: #FFF200;
+	blendMode: multiply;
+}
+
+#governorSelectorTitle
+{
+	x: 30;
+	size: 36;
+}
+
+#selectorBox@governorSelector
+{
+	x: 30;
+	y: 50;
+	width: 350;
+	height: 30;
+	font: TradeGothic BoldCondTwenty;
+	size: 24;
+	color: #ffffff;
+	backgroundColor: #000000;
+	letterSpacing: -.25;
+	paddingLeft: 5;
+	backgroundImage: url("http://www.getschooled.com/pub/n/img/assets/downarrow.png?v=21");
+	background-repeat: no-repeat;
+	background-position:  332 12;
+}
+
+#container@governorSelector
+{
+	width: 355;
+	height: 245;
+	overflow: scroll;
+	backgroundColor: #000000;
+	paddingBottom: 10;
+}
+
+#container@governorSelectorScrollBar
+{
+	marginLeft: 76;
+	paddingTop: -3;
+	arrows: false;
+}
+
+#container@governorSelectorScrollBarScrollBarTrack
+{
+	backgroundImage: none;
+	backgroundColor: #ffffff;
+	border: 1 solid #ffffff 1;
+	width: 10;
+}
+
+#container@governorSelectorScrollBarScrollBarHandle
+{
+	backgroundImage: none;
+	backgroundColor: #000000;
+	border: 1 solid #ffffff 1;
+	width: 10;
+	x:0;
+}
+
+#button@menu@governorSelector
+{
+	size: 24;
+	font: TradeGothic BoldCondTwenty;
+	paddingLeft: 6;
+	width: 317;
+	color: #ffffff;
+	backgroundColor: #000000;
+}
+
+#button@menu@governorSelector:over
+{
+	color: #000000;
+	width: 317;
+	backgroundColor: #ffffff;
+}
+
+#form@writeWashington
+{
+	x: 30;
+	y: 280;
+}
+
+.Label #title@form@writeWashington
+{
+	textFieldWidth: 500;
+	size: 30;
+	leading: -12;
+}
+
+#send@form@writeWashington
+{
+	x: 332;
+	y: 210;
+	font: TradeGothic BoldCondTwenty;
+	size: 24;
+	paddingLeft: 4;
+	paddingRight: 4;
+	color: #ffffff;
+	backgroundColor: #000000;
+}
+
+#nameInput@form@writeWashington
+{
+	y: 90;
+	paddingLeft: 2;
+	maxChars: 24;
+	textFieldWidth: 400;
+	textFieldHeight: 30;
+	tabIndex: 0;
+	restrict: A-Z 0-9;
+	multiline: false;
+	wordwrap: false;
+}
+
+#nameInput@form@writeWashington #emailInput@form@writeWashington
+{
+	y: 130;
+	tabIndex: 1;
+	restrict: A-Z0-9@-/.;
+	maxChars: 1000;
+}
+
+#nameInput@form@writeWashington #dobInput@form@writeWashington
+{
+	y: 170;
+	tabIndex: 2;
+	restrict: 0-9/;
+	maxChars: 10;
+}
+
+#nameInput@form@writeWashington:error
+{ 
+	color: #ec1c24;
+	border: 1px solid #000000 1;
+}
+
+#nameInput@form@writeWashington:error #emailInput@form@writeWashington:error {}
+
+#nameInput@form@writeWashington:error #dobInput@form@writeWashington:error {}
+
+.Label #nameError@form@writeWashington
+{
+	x: 410;
+	y: 98;
+	font: TradeGothic BoldCondTwenty;
+	autoSize: left;
+	textFieldHeight: 30;
+	color: #e03f23;
+	size: 11.5;
+}
+
+#nameError@form@writeWashington #emailError@form@writeWashington
+{
+	y: 132;
+}
+
+#nameError@form@writeWashington #dobError@form@writeWashington
+{
+	y: 172;
+}
+
+#pdfButton@form@writeWashington
+{
+	y: 208;
+	font: TradeGothic BoldCondTwenty;
+	size: 26;
+	paddingLeft: 20;
+	background-image: url('http://www.getschooled.com/pub/n/img/buttons/page.png?v=21');
+	background-repeat: no-repeat;
+	background-position: 0 5;
+}
+
+#pdfButton@form@writeWashington:over
+{
+	color: #e03f23;
+}
+
+/* End Write Washington styles */
+
+/* Support the cause styles */
+
+titleText #sponsorTheCauseTitle
+{
+	y: -20;
+	leading: -55;
+}
+
+scrollingBodyText #sponsorTheCauseBody
+{
+	x: 30px;
+	y: 220px;
+	styleSheet: a, a:hover, .sponsorTheCauseSubTitle,.bodyText,.redText;
+	textFieldWidth: 500px;
+	autoSize: left;
+	size: 16px;	
+	height: 300px;
+}
+
+.redText .sponsorTheCauseSubTitle
+{
+	font-size: 22;
+	leading: 0;
+}
+
+.bodyText .redText .redBodyText
+{
+	
+}
+
+/* Privacy Policy */
+titleText #privacyTitle
+{
+	y: -3;
+	size: 100px;
+	letter-spacing: -2.5;
+}
+
+scrollingBodyText #privacyBody
+{
+	x: 28px;
+	y: 140px;
+	height: 300px;
+}
+
+/* Terms Of Use  */
+
+titleText #termsOfUseTitle
+{
+	y: -20;
+	size:110;
+}
+
+scrollingBodyText #termsOfUseBody
+{
+	x: 30px;
+	y: 150px;
+	height: 300px;	
+}
+
+/* About Us */
+
+titleText .redText #aboutUsTitle
+{
+	y: 15;
+	size:40px;
+	textFieldWidth: 700px;
+	text-transform: capitalize;
+	letter-spacing: .5px;
+	leading: -17;
+}
+
+scrollingBodyText #aboutUsBody
+{
+	x: 28px;
+	y: 290px;
+	size: 15px;
+	height: 230px;
+}
+
+/* Job Section */
+
+titleText #jobTitleTitle
+{
+	x: 20;
+	y: -20;
+	size:95;
+	leading:-35;
+}
+
+baseBodyText #jobTitleBody{
+	x: 520px;
+	y: 15;
+	styleSheet:  .redText, a, a:hover, .sponsorTheCauseSubTitle, .bodyText;
+	textFieldWidth: 430px;
+	autoSize: left;
+	size: 20px;	
+	
+}
+
+/* People Section */
+
+titleText #peopleIAdmireTitle
+{
+	y: -40;
+	size:110;
+	leading:-50;
+}
+
+baseBodyText #peopleIAdmireBody
+{
+	x: 420px;
+	y: 15px;
+	styleSheet: a, a:hover, .sponsorTheCauseSubTitle,.bodyText,.redText;
+	textFieldWidth: 500px;
+	autoSize: left;
+	size: 21px;	
+}
+
+#videoButton@peopleIAdmire
+{
+	x: 420;
+	y: 115;
+}
+
+#lebronJamesOver {
+	fontY: -40;
+	fontX: 25;
+	leftY: -40;
+	leftX: -200;
+	fontSize:20;
+	smallFontSize:26;
+}
+
+#presidentObamaOver {
+	fontY: -40;
+	fontX: 0;
+	leftY: -100;
+	leftX: -320;
+	fontSize:25;
+	smallFontSize:22;
+}
+
+#russellSimmonsOver {
+	fontY: -20;
+	fontX: 40;
+	leftY: -20;
+	leftX: -200;
+	fontSize:25;
+	smallFontSize:22;
+}
+
+#heidiKlumOver {
+	fontY: -20;
+	fontX: 65;
+	leftY: -20;
+	leftX: -150;
+	fontSize:25;
+	smallFontSize:22;
+}
+
+#tonyHawkOver {
+	fontY: -20;
+	fontX: 50;
+	leftY: -20;
+	leftX: -140;
+	fontSize:25;
+	smallFontSize:22;
+}
+
+#keriHilsonOver {
+	fontY: -30;
+	fontX: 30;
+	leftY: -40;
+	leftX: -270;
+	fontSize:25;
+	smallFontSize:22;
+}
+
+#kellyClarksonOver {
+	fontY: -50;
+	fontX: 70;
+	leftY: -50;
+	leftX: -230;
+	fontSize:25;
+	smallFontSize:22;
+}
+
+titleText #lebronJamesTitle {
+	leading:-45;
+	size:80;
+	x:30;
+}
+
+baseBodyText #lebronJamesBody {
+	x:350;
+	y:20;
+	textFieldWidth:600;
+	autoSize:left;
+	size: 20px;
+}
+
+
+
+titleText #keriHilsonTitle {
+	leading:-45;
+	size:80;
+	x:18;
+	y:-8;
+}
+
+baseBodyText #keriHilsonBody {
+	x: 320px;
+	y: 15px;
+	styleSheet: .sponsorTheCauseSubTitle,.bodyText,.redText;
+	textFieldWidth: 600px;
+	autoSize: left;
+	size: 21px;	
+	
+}
+
+titleText #presidentObamaTitle {
+	leading:-45;
+	size:80;
+	x:18;
+	y:-7;
+}
+
+baseBodyText #presidentObamaBody {
+	x: 500px;
+	y: 15px;
+	styleSheet: a, a:hover, .sponsorTheCauseSubTitle,.bodyText,.redText;
+	textFieldWidth: 420px;
+	autoSize: left;
+	size: 21px;    
+	
+}
+
+titleText #tonyHawkTitle {
+	leading:-45;
+	size:80;
+	x:18;
+	y:-8;
+}
+
+baseBodyText #tonyHawkBody {
+	x: 290px;
+	y: 15px;
+	styleSheet: a, a:hover, .sponsorTheCauseSubTitle,.bodyText,.redText;
+	textFieldWidth: 630px;
+	autoSize: left;
+	size: 21px;		
+}
+
+titleText #heidiKlumTitle {
+	leading:-45;
+	size:80;
+	x:18;
+	y:-8;
+}
+
+baseBodyText #heidiKlumBody {
+	x: 270px;
+	y: 15px;
+	styleSheet: a, a:hover, .sponsorTheCauseSubTitle,.bodyText,.redText;
+	textFieldWidth: 650px;
+	autoSize: left;
+	size: 21px;		
+}
+
+titleText #russellSimmonsTitle {
+	leading:-45;
+	size:80;
+	x:18;
+	y:-8;
+}
+
+baseBodyText #russellSimmonsBody {
+	x: 420px;
+	y: 15px;
+	styleSheet: a, a:hover, .sponsorTheCauseSubTitle,.bodyText,.redText;
+	textFieldWidth: 500px;
+	autoSize: left;
+	size: 21px;		
+}
+
+titleText #kellyClarksonTitle {
+	leading:-45;
+	size:80;
+	x:18;
+	y:-8;
+}
+
+baseBodyText #kellyClarksonBody {
+	x: 500px;
+	y: 15px;
+	styleSheet: a, a:hover, .sponsorTheCauseSubTitle,.bodyText,.redText;
+	textFieldWidth: 420px;
+	autoSize: left;
+	size: 21px;        
+}
+
+/* contact us */
+
+titleText #contactUsTitle
+{
+	y: -20;
+	size:110;
+}
+
+scrollingBodyText #contactUsBody{
+	x: 28px;
+	y: 150px;
+	height: 300px;
+}
+
+
+/* Dropouts Section */
+
+titleText #getBackdropoutsTitle 
+{
+	y: -24;
+	size:76;
+	leading: -45px;
+}
+
+titleText #dropoutsTitle
+{
+	y: -24;
+	size:76;
+	leading: -45px;
+}
+
+baseBodyText #dropoutsBody {
+	x: 480px;
+	y: 15px;
+	styleSheet: a, a:hover, .sponsorTheCauseSubTitle, .bodyText, .redText;
+	textFieldWidth: 400px;
+	autoSize: left;
+	size: 17px;
+}
+
+baseBodyText #getBackdropoutsBody {
+	x: 480px;
+	y: 15px;
+	styleSheet: a, a:hover, .sponsorTheCauseSubTitle, .bodyText, .redText;
+	textFieldWidth: 400px;
+	autoSize: left;
+	size: 17px;
+}
+
+/* Label List Sections */
+
+baseBodyText #dropoutsLabelListLabel
+{
+	textFieldWidth: 400px;
+	styleSheet: .redText, a, a:hover, .dropoutsLabelListSubTitle, .dropoutsLabelListTitle, .dropoutsLabelListBody, .getBackdropoutsLabelListSubTitle, .getBackdropoutsLabelListTitle, .getBackdropoutsLabelListBody;
+}
+
+baseBodyText #getBackdropoutsLabelListLabel
+{
+	textFieldWidth: 400px;
+	styleSheet: .redText, a, a:hover, .dropoutsLabelListSubTitle, .dropoutsLabelListTitle, .dropoutsLabelListBody, .getBackdropoutsLabelListSubTitle, .getBackdropoutsLabelListTitle, .getBackdropoutsLabelListBody;
+}
+
+.Label .dropoutsLabelListSubTitle
+{
+	color: #ec1c24;
+	font-size: 17;
+	font-family: Marquee-Regular;
+	
+}
+
+.Label .getBackdropoutsLabelListSubTitle
+{
+	color: #ec1c24;
+	font-size: 17;
+	font-family: Marquee-Regular;
+	
+}
+
+.dropoutsLabelListTitle 
+{
+	font-size: 34;
+	font-family: Marquee-Regular;
+}
+
+.getBackdropoutsLabelListTitle
+{
+	font-size: 34;
+	font-family: Marquee-Regular;
+}
+
+.dropoutsLabelListBody
+{
+	font-size:18px;
+}
+
+.getBackdropoutsLabelListBody
+{
+	font-size:15px;
+}
+
+#dropoutsLabelList
+{
+	x: 30px;
+	y: 180px;
+	overflow: scroll;
+	width: 500px;
+	height: 300
+}
+
+#getBackdropoutsLabelList
+{
+	x: 30px;
+	y: 215;
+	overflow: scroll;
+	width: 500px;
+	height: 300;
+}
+
+/* Parents Dropouts Section */
+
+#dropoutsTitle #parentsDropoutsTitle {  }
+
+#dropoutsBody #parentsDropoutsBody { }
+
+/* Label List Sections */
+
+#dropoutsLabelListLabel #parentsDropoutsLabelListLabel
+{
+	styleSheet: .redText, a, a:hover, .parentsDropoutsLabelListSubTitle,.parentsDropoutsLabelListTitle,.parentsDropoutsLabelListBody;
+}
+
+.dropoutsLabelListSubTitle .parentsDropoutsLabelListSubTitle { }
+
+.dropoutsLabelListTitle .parentsDropoutsLabelListTitle { }
+
+.dropoutsLabelListBody .parentsDropoutsLabelListBody { }
+
+#parentsDropoutsLabelList { 
+	x: 30px;
+	y: 215px;
+	overflow: scroll;
+	width: 500px;
+	height: 300
+}
+
+#dropoutsLabelListLabel #item@billOfRightsLabelList
+{
+	styleSheet: .billOfRightsLabelListSubTitle, .billOfRightsLabelListTitle, .billOfRightsLabelListBody;
+	textFieldWidth: 550;
+	overflow: none;
+	gap: 10;
+}
+
+#circleNumber@item@billOfRightsLabelList
+{
+	x: 10;
+	y: 30;
+}
+
+.dropoutsLabelListSubTitle .billOfRightsLabelListSubTitle
+{ 
+	font-size: 18;
+	leading: -5;
+}
+
+.getBackdropoutsLabelListSubTitle .billOfRightsLabelListSubTitle 
+{ 
+	font-size: 18;
+	leading: -5;
+}
+
+.dropoutsLabelListTitle .billOfRightsLabelListTitle
+{ 
+	font-size: 28;
+}
+
+.getBackdropoutsLabelListTitle .billOfRightsLabelListTitle
+{ 
+	font-size: 28;
+}
+
+#dropoutsLabelList #billOfRightsLabelList
+{
+	x: 10;
+	y: 205;
+	width: 800;
+	height: 320;
+	paddingLeft: 10;
+}
+
+#getBackdropoutsLabelList #billOfRightsLabelList 
+{
+	x: 10;
+	y: 205;
+	width: 800;
+	height: 320;
+	paddingLeft: 10;
+}
+
+/* Calculator Section */
+
+#dropoutsLabelListLabel .Label #item@financialCalculatorLabelList
+{
+	y: 5;
+	
+	textFieldWidth: 300;
+	gap: 10;
+}
+
+#circleNumber@item@financialCalculatorLabelList
+{
+	x: 10;
+	y: 5;
+}
+
+.dropoutsLabelListSubTitle .financialCalculatorLabelListSubTitle 
+{ 
+	font-size: 18;
+	leading: -5;
+}
+
+.dropoutsLabelListTitle .financialCalculatorLabelListTitle
+{ 
+	font-size: 500;
+}
+
+#financialCalculatorLabelList
+{
+	x: 550;
+	y: 210;
+	height: 200;
+	paddingLeft: 10;
+	overflow: auto;
+}
+
+/* Label List Sections */
+
+/* -------------------------------------------------------------- */
+/* PDOG IN THE HOUSE */
+
+
+
+#jobSalary
+{
+	font: TradeGothic BoldCondTwenty;
+	embedFonts: true;
+	width: 230px;
+	textFieldWidth: 230px;
+	wordWrap: true;
+	font-size: 17px;
+	auto-size: left;
+	leading: 4px;
+	x: 330px;
+	y: 210px;
+}
+
+#jobReqs
+{
+	font: TradeGothic BoldCondTwenty;
+	embedFonts: true;
+	width: 230px;
+	textFieldWidth: 230px;
+	wordWrap: true;
+	font-size: 17px;
+	auto-size: left;
+	leading: 4px;
+	x: 330px;
+	
+}
+
+#jobResult
+{
+	font-size: 14px;
+	multiline: true;
+	auto-size: left; 
+	leading: -5px;
+	
+}
+
+#jobResult:over
+{
+	background-image: url('http://www.getschooled.com/pub/n/img/buttons/arrow.png?v=21');
+	background-repeat: no-repeat;
+}
+
+#jobBackButton
+{
+	background-image: url('http://www.getschooled.com/pub/n/img/buttons/arrow2.png?v=21');
+	background-position:  -30 4;
+	background-repeat: no-repeat;
+}
+
+#jobDescriptionScrollBar
+{
+	margin-left: 10px;
+}
+
+#jobDescription
+{
+	font: TradeGothic BoldCondTwenty;
+	embedFonts: true;
+	textFieldWidth: 245px;
+	font-size: 17px;
+	auto-size: left;
+	leading: 4px;
+	x: 30px;
+	y: 210px;
+	overflow: scroll;
+	width: 265px;
+	height: 290px;
+	styleSheet: a, a:hover, .redText;
+}
+
+#WhatILikeTemplateBody
+{
+	font: TradeGothic BoldCondTwenty;
+	embedFonts: true;
+	styleSheet: .sponsorTheCauseSubTitle,.bodyText,.redText;
+	textFieldWidth: 500px;
+	autoSize: left;
+	size: 18px;
+	x: 300;
+	y: 13;
+}
+
+#WhatILikeTemplateTitle
+{
+	size: 80px;
+	x: 30;
+	y: -10;
+	width: 300;
+	textFieldWidth: 300;
+	text-transform: uppercase;
+	leading: -48px;
+	letter-spacing: -3;
+	styleSheet: .redText;
+}
+
+#JobTemplateTitle
+{
+	size: 80px;
+	x: 30;
+	y: -10;
+	width: 1000;
+	textFieldWidth: 1000;
+	text-transform: uppercase;
+	leading: -48px;
+	letter-spacing: -3;
+}
+
+#jobHeader
+{
+	size: 80px;
+	x: 30;
+	y: -10;
+	width: 1000;
+	textFieldWidth: 1000;
+	text-transform: uppercase;
+	leading: -48px;
+	letter-spacing: -3;
+}
+
+#jobTitle
+{
+	iconY: 5;
+	letter-spacing: 0;
+	multiline: true;
+	color: #e03f23;
+}
+
+#jobReqsTitle
+{
+	iconY: 5;
+	letter-spacing: 0;
+	multiline: true;
+	color: #e03f23;
+	leading: -5px;
+}
+
+#jobTitleLink
+{
+	iconY: 5;
+	letter-spacing: 0;
+}
+
+#interestHeader
+{
+	font-size: 25px;
+	autoSize: left;
+	color: #e03f23;
+	/* border: 1px solid red 1; */
+}
+
+#interestTitle
+{
+	font-size: 11px;
+	width: 130px;
+	textFieldWidth: 130px;
+	text-align:center;
+	wordWrap: true;
+	x: 5px;
+	/* border: 1px solid red 1; */
+}
+
+/* VIDEO */
+
+#VideoPlayer
+{
+	width: 550px;
+	height: 310px;
+	background-color: black;
+}
+
+.VideoItemThumb{
+	width: 100px;
+}
+
+.VideoItemTitle{
+	x: 105px;
+	color: #ffffff;
+	font-size: 14px;
+	padding-left: 5px;
+	padding-right: 5px;
+	textFieldWidth: 155px;
+	textFieldHeight: 18px;
+	clear-box-model: background;
+}
+
+.VideoItemTitle:over{
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.VideoItemDescription{
+	x: 110px;
+	y: 20px;
+	color: #ffffff;
+	font-size: 11px;
+	textFieldWidth: 170px;
+	textFieldHeight: 40px;
+}
+
+.VideoNavItem{
+	background-color: #000000;
+}
+
+.VideoPlayer{
+	
+}
+
+#videoControls
+{
+	x: 0;
+	y: 315;
+	width: 550px;
+	height: 21;
+}
+
+#loadTrack 
+{
+	x: 15;
+	y: 5;
+	height: 12;
+}
+
+#currentLoad 
+{
+	x: 1;
+	y: 1;
+	width: 440px;
+	height: 11;
+	background-color: #f7dc3f;
+	alpha: .65;
+}
+
+#totalLoad 
+{
+	x: 0;
+	y: 0;
+	width: 440px;
+	height: 12;
+	background-image: url('http://www.getschooled.com/pub/n/img/video/progress_bg.jpg?v=21');
+	border: 1px solid #CCCCCC 1;
+}
+
+#volumeControls
+{
+	x: 480px;
+	y: 15;
+}
+
+#replayButton
+{
+	width: 92;
+	height: 64;
+	background-color: #fff400;
+	background-repeat: no-repeat;
+	background-position: 33 10;
+	background-image: url('http://www.getschooled.com/pub/n/img/video/replay.png?v=21');
+}
+
+#replayText
+{
+	x: 8px;
+	y: 32px;
+}
+
+#replayContainer
+{
+	x: 242;
+	y: 142;
+}
+
+/* Speaker Button */
+#speakerButton{
+	x: 470px;
+	y: 5;
+	width: 5px;
+	height: 12px;
+	background-image: url('http://www.getschooled.com/pub/n/img/video/speaker.png?v=21');
+}
+
+#playButton {
+	x: 0;
+	y: 6;	
+	width: 6;
+	height: 12;
+}
+
+#playButton:untoggled {	
+	background-image: url("http://www.getschooled.com/pub/n/img/video/VideoPlay.png?v=21");
+}
+
+#playButton:toggled {
+	background-image: url("http://www.getschooled.com/pub/n/img/video/VideoPause.png?v=21");
+}
+
+#fullScreenButton {
+	x: 510px;
+	y: 4;
+	width: 14px;
+	height: 13px;
+	background-image: url("http://www.getschooled.com/pub/n/img/video/FullScreen.png?v=21");
+}
+
+#hdButton {
+	x: 530px;
+	y: 5;
+	width: 20px;
+	height: 14px;
+	background-image: url("http://www.getschooled.com/pub/n/img/video/s2f.png?v=21");
+}
+
+#leftTape {
+	width: 57px;
+	height: 247px;
+	background-image: url('http://www.getschooled.com/pub/n/img/video/left-tape.png?v=21');
+}
+
+#rightTape {
+	width: 44px;
+	height: 188px;
+	background-image: url('http://www.getschooled.com/pub/n/img/video/right-tape.png?v=21');
+}
+
+#topTape {
+	width: 125px;
+	height: 26px;
+	background-image: url('http://www.getschooled.com/pub/n/img/video/tapetop.png?v=21');
+}
+
+#botTape {
+	width: 144px;
+	height: 49px;
+	background-image: url('http://www.getschooled.com/pub/n/img/video/tapebot.png?v=21');
+}
+
+#listContainer {
+	width: 275;
+	height: 315;
+	overflow: scroll;
+}
+
+#resultsContainer {
+	width: 245;
+	height: 250;
+	overflow: scroll;
+}
+
+#listContainerScrollBar {
+	margin-left: 275px;
+}
+
+#resultsContainerScrollBar {
+	margin-left: 275px;
+}
+
+#listItemTitle {
+	autoSize: none;
+	wordWrap: true;
+	width: 350px;
+	height: 60px;
+	textFieldWidth: 100px;
+	textFieldHeight: 78px;
+	x: 120px;
+}
+
+#videoListItem {
+	padding: 10px;
+}
+
+#videoDescription {
+	font: TradeGothic BoldCondTwenty;
+	embedFonts: true;
+	font-size: 17px;
+	color:#231f20;
+	leading: 5;
+	styleSheet: .redText;
+	textFieldWidth: 550px;
+	autoSize: left;
+	styleSheet: a, a:hover, .redText;
+}
+
+#videoLength {
+	x: 120px;
+	y: 60px;
+	font-size: 13px;
+	color:#ec1c24;
+}
+
+#videoNowPlaying {
+	font-size: 14px;
+	color:#ec1c24;
+}
+
+#featuredSponsorsTitle
+{
+	size: 80px;
+	x: 18;
+	y: -4;
+	width: 500;
+	textFieldWidth: 500;
+	text-transform: uppercase;
+	leading: -48px;
+	letter-spacing: -3;
+}
+
+#featuredSponsorsBody
+{
+	font: TradeGothic BoldCondTwenty;
+	embedFonts: true;
+	styleSheet: a, a:hover, .sponsorTheCauseSubTitle,.bodyText,.redText;
+	textFieldWidth: 420px;
+	autoSize: left;
+	size: 18px;
+	x: 470;
+	y: 18;
+}
+
+#IconField {
+	fontSize: 13px;
+}
+#IconFieldJob {
+	fontSize: 17px;
+	font: Marquee-Regular;
+	iconY: 4;
+}
+#IconFieldJobContent {
+	font: Headline One HPLHS;
+	font-size: 13px;
+	iconY: 0;
+	letter-spacing: 0.5;
+}
+#IconFieldJobContentPenny {
+	font: Headline One HPLHS;
+	font-size: 13px;
+	iconY: -2;
+	letter-spacing: 0.5;
+}
+
+/* P-DAWG OUTTA THE HOUSE */ 
+
+
+#JobContentScrollbar
+{
+	margin-left: -30px;
+	align: left;
+	arrows: false;
+}
+
+#JobContentScrollbarScrollBarHandle
+{
+	border: 2px solid #000000;
+	width: 4px;
+	height: 53px;
+	background-image: none;
+	background-color: 0xFFF200;
+	background-color-alpha: .8;
+	x: 0;
+}
+
+#JobContentScrollbarScrollBarTrack
+{
+	border: 2px solid #000000;
+	width: 4px;
+	background-image: none;
+	background-color: 0xffffff;
+}
+
+#peopleSectionVideoLink {
+	font: Headline One HPLHS;
+	font-size: 24px;
+	letter-spacing: 0.8;
+}
