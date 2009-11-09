@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project name="ASDocsTest" default="compile" basedir="./">
+
+	<!-- import our build properties file -->
+	<property file="${basedir}/build.properties" />
+
+	<taskdef resource="flexTasks.tasks" classpath="${FLEX_HOME}${flex.tasks}" />
+
+	<target name="compile">
+		
+		<sync todir="${basedir}/bin">
+			<fileset dir="${basedir}/build/bin-resources" />
+		</sync>
+		
+		<!-- Build FCSSSpeedTest Example -->
+		<antcall target="compile-swf">
+			<param name="example.name" value="FCSSSpeedTest" />
+		</antcall>
+
+		<!-- Build ParseExternalCSSExample Example -->
+		<antcall target="compile-swf">
+			<param name="example.name" value="ParseExternalCSSExample" />
+		</antcall>
+		
+		<!-- Build ParseInternalCSSExample Example -->
+		<antcall target="compile-swf">
+			<param name="example.name" value="ParseInternalCSSExample" />
+		</antcall>
+		
+		<!-- Build ParseMultipleCSSTextExample Example -->
+		<antcall target="compile-swf">
+			<param name="example.name" value="ParseMultipleCSSTextExample" />
+		</antcall>
+		
+		<!-- Build TextFieldFactoryExample Example -->
+		<antcall target="compile-swf">
+			<param name="example.name" value="TextFieldFactoryExample" />
+		</antcall>
+		
+		<!-- Build TextFieldUtilityExample Example -->
+		<antcall target="compile-swf">
+			<param name="example.name" value="TextFieldUtilityExample" />
+		</antcall>
+	</target>
+
+	<target name="compile-swf">
+		<echo>
+			Building '${example.name}' Example
+		</echo>
+
+		<mxmlc id="swf.compile" file="${basedir}/src/${example.name}.as" target-player="9.0.115" output="${basedir}/bin/swfs/${example.name}.swf" incremental="true" debug="true" use-network="false">
+			<library-path dir="${basedir}/build/libs" append="true">
+				<include name="fcss-v1.7.0-alpha.swc" />
+			</library-path>
+
+			<default-size width="1024" height="786" />
+
+			<default-background-color>0xffffff</default-background-color>
+			<default-frame-rate>30</default-frame-rate>
+		</mxmlc>
+		
+		<copy file="${basedir}/build/html-template/index.template.html" tofile="${basedir}/bin/${example.name}.html" />
+		
+		<replace file="${basedir}/bin/${example.name}.html" propertyFile="${basedir}/build/html-template/html.properties">
+			<replacefilter token="@width@" property="width" />
+			<replacefilter token="@height@" property="height" />
+			<replacefilter token="@bgcolor@" property="bgcolor" />
+			<replacefilter token="@example@" value="${example.name}" />
+			<replacefilter token="@version_major@" property="version_major" />
+			<replacefilter token="@version_minor@" property="version_minor" />
+			<replacefilter token="@version_minor@" property="version_minor" />
+			<replacefilter token="@version_revision@" property="version_revision" />
+		</replace>
+	</target>
+
+	<target name="local_open">
+		<fdt.startDebugger projectname="FlashBumRedux" />
+		<exec executable="open">
+			<arg line="-a ${browser} ${local.path}" />
+		</exec>
+	</target>
+
+</project>
+
+

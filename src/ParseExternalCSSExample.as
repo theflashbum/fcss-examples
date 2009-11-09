@@ -92,9 +92,9 @@ package
 			
 			// Let's combine a few styles on the fly from an array
 			var styleNames:Array = ["baseStyle", "interactive", "#playButton"];
-			var customPlayButtonStyle:Style = styleSheet.getStyle.apply(null, styleNames);
+			var customPlayButtonStyle2:Style = styleSheet.getStyle.apply(null, styleNames);
 			// Output
-			outputDisplay.appendText("From an Array-"+customPlayButtonStyle.toString() + "\n"+ "\n");
+			outputDisplay.appendText("From an Array-"+customPlayButtonStyle2.toString() + "\n"+ "\n");
 			
 			// If you want to see what the entire StyleSheet looks like do this
 			outputDisplay.appendText("StyleSheet:" + "\n" + styleSheet.toString() + "\n"+ "\n");
