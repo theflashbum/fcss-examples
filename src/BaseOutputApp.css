@@ -1,0 +1,14 @@
+/* CSS file */
+@namespace s "library://ns.adobe.com/flex/spark";
+@namespace mx "library://ns.adobe.com/flex/halo";
+
+
+global
+{
+	textAlign: center;
+	fontSize: 12;
+	fontWeight: bold;
+	fontStyle: normal;
+	textDecoration: underline;
+	lineThrough: false;
+}

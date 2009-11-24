@@ -8,11 +8,11 @@
 	<taskdef resource="flexTasks.tasks" classpath="${FLEX_HOME}${flex.tasks}" />
 
 	<target name="compile">
-		
+
 		<sync todir="${basedir}/bin">
 			<fileset dir="${basedir}/build/bin-resources" />
 		</sync>
-		
+
 		<!-- Build FCSSSpeedTest Example -->
 		<antcall target="compile-swf">
 			<param name="example.name" value="FCSSSpeedTest" />
@@ -22,22 +22,22 @@
 		<antcall target="compile-swf">
 			<param name="example.name" value="ParseExternalCSSExample" />
 		</antcall>
-		
+
 		<!-- Build ParseInternalCSSExample Example -->
 		<antcall target="compile-swf">
 			<param name="example.name" value="ParseInternalCSSExample" />
 		</antcall>
-		
+
 		<!-- Build ParseMultipleCSSTextExample Example -->
 		<antcall target="compile-swf">
 			<param name="example.name" value="ParseMultipleCSSTextExample" />
 		</antcall>
-		
+
 		<!-- Build TextFieldFactoryExample Example -->
 		<antcall target="compile-swf">
 			<param name="example.name" value="TextFieldFactoryExample" />
 		</antcall>
-		
+
 		<!-- Build TextFieldUtilityExample Example -->
 		<antcall target="compile-swf">
 			<param name="example.name" value="TextFieldUtilityExample" />
@@ -59,9 +59,9 @@
 			<default-background-color>0xffffff</default-background-color>
 			<default-frame-rate>30</default-frame-rate>
 		</mxmlc>
-		
+
 		<copy file="${basedir}/build/html-template/index.template.html" tofile="${basedir}/bin/${example.name}.html" />
-		
+
 		<replace file="${basedir}/bin/${example.name}.html" propertyFile="${basedir}/build/html-template/html.properties">
 			<replacefilter token="@width@" property="width" />
 			<replacefilter token="@height@" property="height" />
