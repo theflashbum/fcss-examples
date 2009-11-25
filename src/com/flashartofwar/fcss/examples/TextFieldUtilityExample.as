@@ -1,4 +1,4 @@
-package
+package com.flashartofwar.fcss.examples
 {
 	import com.flashartofwar.fcss.factories.TextFieldFactory;
 	import com.flashartofwar.fcss.managers.StyleSheetManager;

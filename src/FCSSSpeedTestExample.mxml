@@ -4,39 +4,31 @@
 					 xmlns:mx="library://ns.adobe.com/flex/halo" xmlns:fcss = "com.flashartofwar.fcss.*" xmlns:local="*" width="500" height="600" applicationComplete="startExample()">
 	<fx:Script>
 		<![CDATA[
-			import com.flashartofwar.fcss.examples.FCSSSpeedTest;
+			import com.flashartofwar.fcss.examples.AbstractExample;
+			import com.flashartofwar.fcss.examples.ParseExternalCSS;
 			private var urlLoader : URLLoader;
 
 
 			protected function startExample():void
 			{
-				mainPanel.title = "F*CSS Speed Test";
+				mainPanel.title = "F*CSS Parse External CSS Example";
 				descriptionField.text= "This test loads in CSS, creates a new StyleSheet, parses the text then runs through each of the selectors adding up " +
 					"how long it takes to request each one. After the first test is run an additional test is done re-requesting each selector to see how well " +
 					"the cache system performs.";
 				panelA.height = 100;
-				loadCSS();
+				run();
 			}
 
-			public function loadCSS():void
+			private function run() : void
 			{
-				urlLoader = new URLLoader( );
-				urlLoader.addEventListener( Event.COMPLETE, onCSSLoad);
-				urlLoader.load(new URLRequest("css/large_demo.styles.css"));
-			}
-
-			private function onCSSLoad(event : Event) : void
-			{
-				var fcssSpeedTest:FCSSSpeedTest = new FCSSSpeedTest();
-				fcssSpeedTest.addEventListener(Event.COMPLETE, onTestComplete);
-				fcssSpeedTest.runExample(URLLoader(event.target ).data);
+				example = new ParseExternalCSS();
+				example.addEventListener(Event.COMPLETE, onTestComplete);
+				example.runExample();
 			}
 
 			protected function onTestComplete(event:Event):void
 			{
-
-
-				outputField.appendText(FCSSSpeedTest(event.target).report);
+				outputField.appendText(AbstractExample(event.target).report);
 			}
 
 		]]>

@@ -15,33 +15,19 @@
 
 		<!-- Build FCSSSpeedTest Example -->
 		<antcall target="compile-swf">
-			<param name="example.name" value="FCSSSpeedTest" />
+			<param name="example.name" value="FCSSSpeedTestExample" />
 		</antcall>
 
-		<!-- Build ParseExternalCSSExample Example -->
-		<antcall target="compile-swf">
-			<param name="example.name" value="ParseExternalCSSExample" />
-		</antcall>
-
-		<!-- Build ParseInternalCSSExample Example -->
+		<!-- Build FCSSInternalCSSExample Example -->
 		<antcall target="compile-swf">
 			<param name="example.name" value="ParseInternalCSSExample" />
 		</antcall>
 
-		<!-- Build ParseMultipleCSSTextExample Example -->
+		<!-- Build FCSSExternalCSSExample Example -->
 		<antcall target="compile-swf">
-			<param name="example.name" value="ParseMultipleCSSTextExample" />
+			<param name="example.name" value="ParseExternalCSSExample" />
 		</antcall>
 
-		<!-- Build TextFieldFactoryExample Example -->
-		<antcall target="compile-swf">
-			<param name="example.name" value="TextFieldFactoryExample" />
-		</antcall>
-
-		<!-- Build TextFieldUtilityExample Example -->
-		<antcall target="compile-swf">
-			<param name="example.name" value="TextFieldUtilityExample" />
-		</antcall>
 	</target>
 
 	<target name="compile-swf">
@@ -49,16 +35,20 @@
 			Building '${example.name}' Example
 		</echo>
 
-		<mxmlc id="swf.compile" file="${basedir}/src/${example.name}.as" target-player="9.0.115" output="${basedir}/bin/swfs/${example.name}.swf" incremental="true" debug="true" use-network="false">
-			<library-path dir="${basedir}/build/libs" append="true">
-				<include name="fcss-v1.7.0-alpha.swc" />
-			</library-path>
+		<java jar="${FLEX_HOME}/lib/mxmlc.jar" dir="${FLEX_HOME}/frameworks" fork="true" failonerror="true">
+			<arg value="${main.src.loc}/${example.name}.mxml" />
 
-			<default-size width="1024" height="786" />
-
-			<default-background-color>0xffffff</default-background-color>
-			<default-frame-rate>30</default-frame-rate>
-		</mxmlc>
+			<arg value="-output=${bin.loc}/swfs/${example.name}.swf" />
+			<arg value="-default-size=500,600" />
+			<arg value="-target-player=10.0.0" />
+			<!-- Include classes from SWCs in this folder, but only the ones we use. -->
+			<arg value="-library-path+=${lib.loc}" />
+			<arg value="-use-network=false " />
+			<!-- So true. -->
+			<arg value="-incremental=true" />
+			<arg value="-verbose-stacktraces=true" />
+			<arg value="-headless-server=true" />
+		</java>
 
 		<copy file="${basedir}/build/html-template/index.template.html" tofile="${basedir}/bin/${example.name}.html" />
 
@@ -75,7 +65,6 @@
 	</target>
 
 	<target name="local_open">
-		<fdt.startDebugger projectname="FlashBumRedux" />
 		<exec executable="open">
 			<arg line="-a ${browser} ${local.path}" />
 		</exec>
