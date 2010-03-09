@@ -1,36 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<local:BaseOutputApp xmlns:fx="http://ns.adobe.com/mxml/2009" 
-					 xmlns:s="library://ns.adobe.com/flex/spark" 
-					 xmlns:mx="library://ns.adobe.com/flex/halo" xmlns:fcss = "com.flashartofwar.fcss.*" xmlns:local="*" width="500" height="600" applicationComplete="startExample()">
-	<fx:Script>
+<local:BaseOutputApp xmlns:fx="http://ns.adobe.com/mxml/2009"
+                     xmlns:s="library://ns.adobe.com/flex/spark"
+                     xmlns:mx="library://ns.adobe.com/flex/halo" xmlns:fcss="com.flashartofwar.fcss.*" xmlns:local="*"
+                     width="500" height="600" applicationComplete="startExample()">
+
+
+    <fx:Script>
 		<![CDATA[
-			import com.flashartofwar.fcss.examples.AbstractExample;
-			import com.flashartofwar.fcss.examples.ParseExternalCSS;
-			private var urlLoader : URLLoader;
+        import com.flashartofwar.fcss.examples.FCSSSpeedTest;
+
+        private var urlLoader:URLLoader = new URLLoader();
+        private var css:String;
 
 
-			protected function startExample():void
-			{
-				mainPanel.title = "F*CSS Parse External CSS Example";
-				descriptionField.text= "This test loads in CSS, creates a new StyleSheet, parses the text then runs through each of the selectors adding up " +
-					"how long it takes to request each one. After the first test is run an additional test is done re-requesting each selector to see how well " +
-					"the cache system performs.";
-				panelA.height = 100;
-				run();
-			}
+        protected function startExample():void
+        {
+            mainPanel.title = "F*CSS Performance Tool";
+            descriptionField.text = "This test loads in CSS, creates a new StyleSheet, parses the text then runs through each of the selectors adding up " + "how long it takes to request each one. After the first test is run an additional test is done re-requesting each selector to see how well " + "the cache system performs.";
+            panelA.height = 100;
 
-			private function run() : void
-			{
-				example = new ParseExternalCSS();
-				example.addEventListener(Event.COMPLETE, onTestComplete);
-				example.runExample();
-			}
 
-			protected function onTestComplete(event:Event):void
-			{
-				outputField.appendText(AbstractExample(event.target).report);
-			}
+            pathInput.text = "http://fcss.flashartofwar.com/wp-content/uploads/large_demo.styles.css";
+        }
+
+        private function handleError(event:*):void
+        {
+            outputField.text = "There was an error loading that StyleSheet. \n\n" + event;
+        }
+
+        override protected function loadCSS():void
+        {
+            addLoadListeners();
+
+            outputField.text = "Loading CSS";
+
+
+            var url:String = pathInput.text;
+
+            try
+            {
+                var ext:String = url.substr(-4);
+                if (ext == ".css" || ext == "fcss")
+                    urlLoader.load(new URLRequest(pathInput.text));
+                else
+                    outputField.text = "File is not supported, needs to have a .css or .fcss extension.";
+            }
+            catch(error:Error)
+            {
+                outputField.text = "There was an error loading the file. \n\n" + error.message;
+            }
+
+        }
+
+        private function onComplete(event:Event):void
+        {
+            removeLoadListeners();
+            css = event.target.data;
+            outputField.text = "Parsing CSS";
+            run();
+        }
+
+        private function run():void
+        {
+            example = new FCSSSpeedTest();
+            example.addEventListener(Event.COMPLETE, onTestComplete);
+
+            example.runExample(css);
+        }
+
+        protected function onTestComplete(event:Event):void
+        {
+            outputField.text = FCSSSpeedTest(event.target).report;
+        }
+
+        private function addLoadListeners():void
+        {
+            urlLoader.addEventListener(Event.COMPLETE, onComplete);
+            urlLoader.addEventListener(SecurityErrorEvent.SECURITY_ERROR, handleError);
+            //urlLoader.addEventListener(HTTPStatusEvent.HTTP_STATUS, handleError);
+            urlLoader.addEventListener(IOErrorEvent.IO_ERROR, handleError);
+        }
+
+        private function removeLoadListeners():void
+        {
+            urlLoader.removeEventListener(Event.COMPLETE, onComplete);
+            urlLoader.removeEventListener(SecurityErrorEvent.SECURITY_ERROR, handleError);
+            //urlLoader.removeEventListener(HTTPStatusEvent.HTTP_STATUS, handleError);
+            urlLoader.removeEventListener(IOErrorEvent.IO_ERROR, handleError);
+        }
 
 		]]>
 	</fx:Script>
+
 </local:BaseOutputApp>

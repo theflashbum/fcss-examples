@@ -1,22 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
-			   xmlns:s="library://ns.adobe.com/flex/spark" 
-			   xmlns:mx="library://ns.adobe.com/flex/halo" width="500" height="600">
-	<fx:Script>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
+               xmlns:s="library://ns.adobe.com/flex/spark"
+               xmlns:mx="library://ns.adobe.com/flex/halo" width="500" height="600">
+    <fx:Script>
 		<![CDATA[
-			import com.flashartofwar.fcss.examples.AbstractExample;
-			protected var example : AbstractExample;
+        import com.flashartofwar.fcss.examples.AbstractExample;
+
+        protected var example:AbstractExample;
+
+        protected function loadCSS():void
+        {
+
+        }
 		]]>
 	</fx:Script>
-	<mx:Panel width="100%" height="100%" title="Title" id="mainPanel" paddingTop="10" paddingLeft="10" paddingRight="10" paddingBottom="10" dropShadowVisible="false" x="0" y="0">
-		<mx:VDividedBox width="100%" height="100%">
-			<mx:Canvas id="panelA" label="Description" width="100%" height="200" backgroundColor="#323232" >
-				<s:TextArea width="100%" height="100%" borderVisible="true" text="" id="descriptionField" borderAlpha="0.3" x="0" y="0" editable="false"/>
-			</mx:Canvas>
-			<mx:Canvas label="Canvas 1" width="100%" height="100%" color="0x323232" backgroundColor="#ACACAC">
-				<s:TextArea x="0" y="0" width="100%" height="100%" editable="false" id="outputField" text="">
-				</s:TextArea>
-			</mx:Canvas>
-		</mx:VDividedBox>
-	</mx:Panel>
+    <mx:Panel width="100%" height="100%" title="Title" id="mainPanel" paddingTop="10" paddingLeft="10" paddingRight="10"
+              paddingBottom="10" dropShadowVisible="false" x="0" y="0">
+        <mx:HBox width="100%">
+            <s:TextInput id="pathInput" width="100%">This is a Test</s:TextInput>
+            <s:Button id="load" label="Load CSS" click="loadCSS()"/>
+        </mx:HBox>
+
+        <mx:VDividedBox width="100%" height="100%">
+            <mx:Canvas id="panelA" label="Description" width="100%" height="200" backgroundColor="#323232">
+                <s:TextArea width="100%" height="100%" borderVisible="true" text="" id="descriptionField"
+                            borderAlpha="0.3" x="0" y="0" editable="false"/>
+            </mx:Canvas>
+            <mx:Canvas label="Canvas 1" width="100%" height="100%" color="0x323232" backgroundColor="#ACACAC">
+                <s:TextArea x="0" y="0" width="100%" height="100%" editable="false" id="outputField" text="">
+                </s:TextArea>
+            </mx:Canvas>
+        </mx:VDividedBox>
+    </mx:Panel>
 </s:Application>

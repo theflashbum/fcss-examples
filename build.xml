@@ -1,74 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<project name="ASDocsTest" default="compile" basedir="./">
+<project name="FCSSExamples" default="compile" basedir="./">
 
-	<!-- import our build properties file -->
-	<property file="${basedir}/build.properties" />
+    <!-- import our build properties file -->
+    <property file="${basedir}/build.properties"/>
 
-	<taskdef resource="flexTasks.tasks" classpath="${FLEX_HOME}${flex.tasks}" />
+    <target name="compile">
 
-	<target name="compile">
+        <sync todir="${basedir}/bin">
+            <fileset dir="${basedir}/build/bin-resources"/>
+        </sync>
 
-		<sync todir="${basedir}/bin">
-			<fileset dir="${basedir}/build/bin-resources" />
-		</sync>
+        <!-- Build FCSSSpeedTest Example -->
+        <antcall target="compile-swf">
+            <param name="example.name" value="FCSSSpeedTestExample"/>
+        </antcall>
 
-		<!-- Build FCSSSpeedTest Example -->
-		<antcall target="compile-swf">
-			<param name="example.name" value="FCSSSpeedTestExample" />
-		</antcall>
+        <!-- Build FCSSInternalCSSExample Example
+          <antcall target="compile-swf">
+              <param name="example.name" value="ParseInternalCSSExample" />
+          </antcall> -->
 
-		<!-- Build FCSSInternalCSSExample Example -->
-		<antcall target="compile-swf">
-			<param name="example.name" value="ParseInternalCSSExample" />
-		</antcall>
+        <!-- Build FCSSExternalCSSExample Example
+          <antcall target="compile-swf">
+              <param name="example.name" value="ParseExternalCSSExample" />
+          </antcall> -->
 
-		<!-- Build FCSSExternalCSSExample Example -->
-		<antcall target="compile-swf">
-			<param name="example.name" value="ParseExternalCSSExample" />
-		</antcall>
+    </target>
 
-	</target>
+    <target name="compile-swf">
+        <echo>
+            Building '${example.name}' Example
+        </echo>
 
-	<target name="compile-swf">
-		<echo>
-			Building '${example.name}' Example
-		</echo>
+        <java jar="${FLEX_HOME}/lib/mxmlc.jar" dir="${FLEX_HOME}/frameworks" fork="true" failonerror="true">
+            <arg value="${main.src.loc}/${example.name}.mxml"/>
 
-		<java jar="${FLEX_HOME}/lib/mxmlc.jar" dir="${FLEX_HOME}/frameworks" fork="true" failonerror="true">
-			<arg value="${main.src.loc}/${example.name}.mxml" />
+            <arg value="-output=${bin.loc}/swfs/${example.name}.swf"/>
+            <arg value="-default-size=500,600"/>
+            <arg value="-target-player=10.0.0"/>
+            <!-- Include classes from SWCs in this folder, but only the ones we use. -->
+            <arg value="-library-path+=${lib.loc}"/>
+            <arg value="-use-network=true "/>
+            <!-- So true. -->
+            <arg value="-incremental=true"/>
+            <arg value="-verbose-stacktraces=true"/>
+            <arg value="-headless-server=true"/>
+            <arg value="-debug=false"/>
+        </java>
 
-			<arg value="-output=${bin.loc}/swfs/${example.name}.swf" />
-			<arg value="-default-size=500,600" />
-			<arg value="-target-player=10.0.0" />
-			<!-- Include classes from SWCs in this folder, but only the ones we use. -->
-			<arg value="-library-path+=${lib.loc}" />
-			<arg value="-use-network=false " />
-			<!-- So true. -->
-			<arg value="-incremental=true" />
-			<arg value="-verbose-stacktraces=true" />
-			<arg value="-headless-server=true" />
-		</java>
+        <copy file="${basedir}/build/html-template/index.template.html" tofile="${basedir}/bin/${example.name}.html"/>
 
-		<copy file="${basedir}/build/html-template/index.template.html" tofile="${basedir}/bin/${example.name}.html" />
-
-		<replace file="${basedir}/bin/${example.name}.html" propertyFile="${basedir}/build/html-template/html.properties">
-			<replacefilter token="@width@" property="width" />
-			<replacefilter token="@height@" property="height" />
-			<replacefilter token="@bgcolor@" property="bgcolor" />
-			<replacefilter token="@example@" value="${example.name}" />
-			<replacefilter token="@version_major@" property="version_major" />
-			<replacefilter token="@version_minor@" property="version_minor" />
-			<replacefilter token="@version_minor@" property="version_minor" />
-			<replacefilter token="@version_revision@" property="version_revision" />
-		</replace>
-	</target>
-
-	<target name="local_open">
-		<exec executable="open">
-			<arg line="-a ${browser} ${local.path}" />
-		</exec>
-	</target>
+        <replace file="${basedir}/bin/${example.name}.html"
+                 propertyFile="${basedir}/build/html-template/html.properties">
+            <replacefilter token="@width@" property="width"/>
+            <replacefilter token="@height@" property="height"/>
+            <replacefilter token="@bgcolor@" property="bgcolor"/>
+            <replacefilter token="@example@" value="${example.name}"/>
+            <replacefilter token="@version_major@" property="version_major"/>
+            <replacefilter token="@version_minor@" property="version_minor"/>
+            <replacefilter token="@version_minor@" property="version_minor"/>
+            <replacefilter token="@version_revision@" property="version_revision"/>
+        </replace>
+    </target>
 
 </project>
 
